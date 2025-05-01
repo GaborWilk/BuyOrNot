@@ -7,8 +7,8 @@ answer to this question:
     Based on age, income, and gender, will this person make a purchase?
 
 Where the output (purchased column) can be the following:
-    1 = the person purchased (something)
-    0 = the person did not purchase
+- 1 = the person purchased (something)
+- 0 = the person did not purchase
 
 It's designed for learning, experimentation, and potential real-world adaptation.
 
