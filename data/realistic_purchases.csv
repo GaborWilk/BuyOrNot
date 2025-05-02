@@ -1,501 +1,1001 @@
-age,income,gender,purchased
-56,91832,Male,1
-69,75486,Male,0
-46,37209,Male,0
-32,52736,Female,0
-60,79003,Male,1
-25,49384,Female,0
-38,66657,Female,1
-56,71619,Male,1
-36,46096,Male,0
-40,59107,Female,1
-28,11380,Female,0
-28,44634,Female,0
-41,56211,Male,1
-53,41283,Female,0
-57,84486,Male,1
-41,38547,Female,0
-20,53399,Female,0
-39,61961,Male,1
-19,81619,Female,0
-41,38462,Male,0
-61,77447,Male,1
-47,60153,Female,1
-55,45277,Male,1
-19,66931,Male,0
-38,62985,Female,1
-50,50996,Male,0
-29,61047,Male,0
-39,54220,Male,1
-61,61702,Female,0
-42,69931,Male,1
-66,83790,Female,0
-44,41432,Female,0
-59,91995,Male,1
-45,30718,Male,0
-33,57723,Male,1
-32,68824,Female,1
-64,64214,Male,0
-68,50659,Male,0
-61,56878,Male,0
-69,52604,Male,0
-20,51159,Male,0
-54,72744,Female,1
-68,65355,Female,0
-24,49606,Male,0
-38,73493,Male,1
-26,64609,Male,0
-56,72192,Male,1
-35,69444,Female,1
-21,47565,Male,0
-42,51597,Female,0
-31,71209,Female,1
-67,69155,Male,0
-26,59686,Female,0
-43,61759,Female,1
-19,79164,Female,0
-37,51126,Female,1
-45,68206,Male,1
-64,56967,Male,0
-24,56734,Female,0
-61,76481,Male,0
-25,72381,Male,0
-64,72202,Male,1
-52,79582,Male,1
-31,60315,Male,1
-34,70229,Female,1
-53,55345,Male,1
-67,64862,Male,0
-57,58047,Male,1
-21,61454,Male,0
-19,68927,Female,0
-23,47726,Female,0
-59,91385,Female,1
-21,44909,Female,0
-46,41787,Male,0
-35,77371,Female,1
-43,71874,Male,1
-61,69361,Male,0
-51,69425,Male,1
-27,59816,Male,1
-53,46541,Male,0
-31,61137,Female,1
-48,49842,Female,0
-65,74626,Female,0
-32,57794,Female,1
-25,47617,Male,0
-31,55179,Female,1
-40,66193,Male,1
-57,51544,Female,0
-38,47666,Male,0
-33,63655,Male,1
-62,63674,Female,0
-35,52395,Male,1
-64,52934,Male,0
-41,63480,Female,1
-43,38278,Male,0
-42,38888,Female,1
-62,49223,Female,0
-58,56798,Female,1
-46,64663,Male,1
-32,82130,Male,1
-62,72864,Male,0
-18,57600,Female,0
-42,59714,Male,1
-24,44962,Female,0
-26,59722,Female,0
-41,55670,Male,1
-18,64840,Female,1
-61,47591,Male,0
-25,67790,Male,1
-41,82991,Male,1
-28,58368,Male,0
-68,66025,Male,0
-34,70352,Female,1
-25,53981,Female,0
-52,63361,Female,1
-52,60188,Male,1
-50,61465,Male,1
-22,48404,Male,1
-59,60367,Female,1
-56,67469,Male,1
-58,81767,Female,1
-45,74389,Female,1
-24,92297,Male,0
-26,48489,Male,0
-25,73084,Female,0
-29,62750,Male,0
-51,92847,Female,1
-50,47875,Male,0
-65,47404,Male,0
-40,51009,Female,0
-41,28141,Male,0
-54,52113,Female,0
-52,48613,Male,1
-61,62255,Female,0
-57,65126,Female,1
-39,88142,Male,1
-44,74256,Female,1
-52,51346,Male,0
-18,46523,Male,0
-52,67378,Male,1
-54,40196,Female,1
-64,87471,Female,0
-31,77691,Male,1
-20,52962,Male,0
-18,34302,Female,1
-22,80308,Male,0
-43,58281,Male,1
-31,78567,Female,1
-56,36083,Male,0
-44,51009,Female,0
-26,60078,Male,0
-32,60704,Female,1
-32,53249,Male,0
-43,69342,Male,1
-59,43985,Female,1
-30,57864,Male,0
-68,61804,Female,1
-49,67716,Male,1
-56,70674,Female,1
-66,43130,Female,1
-69,36988,Female,0
-49,79165,Female,1
-21,64984,Male,0
-47,48772,Male,0
-54,83267,Female,1
-40,61735,Female,1
-56,77689,Female,1
-62,61012,Male,0
-32,90911,Male,1
-60,86330,Male,0
-46,56265,Male,1
-53,74573,Female,1
-30,69680,Female,1
-49,80529,Female,1
-24,45526,Male,0
-68,70290,Male,0
-39,75876,Male,1
-45,33618,Female,0
-19,42251,Female,0
-59,29411,Male,1
-62,55958,Female,0
-23,70763,Male,0
-45,82535,Male,1
-45,61111,Female,1
-61,84429,Male,0
-61,39298,Female,0
-37,34449,Male,0
-47,59166,Female,1
-28,65760,Female,0
-45,59509,Female,1
-42,28988,Male,1
-56,58663,Male,1
-50,40432,Female,0
-18,70045,Female,1
-44,65498,Male,1
-69,45901,Male,0
-30,52291,Male,0
-58,44111,Female,0
-20,59059,Male,0
-56,74327,Male,1
-23,45214,Female,0
-25,67560,Male,0
-44,52046,Male,0
-26,48106,Male,1
-54,58394,Female,1
-50,44471,Female,0
-68,51695,Female,0
-59,42031,Female,0
-61,89470,Female,1
-41,60528,Female,1
-32,49504,Female,0
-49,63209,Male,1
-49,58315,Male,1
-41,56685,Female,1
-58,69212,Male,1
-69,71362,Male,0
-66,52042,Female,0
-66,51362,Male,0
-69,55874,Male,0
-29,25471,Male,0
-56,37272,Male,0
-19,80503,Male,0
-20,84674,Female,0
-66,56264,Female,0
-54,68648,Female,1
-66,64668,Male,0
-34,106183,Female,1
-66,76793,Male,0
-19,58081,Male,1
-19,45666,Male,0
-45,35903,Male,0
-40,63051,Female,1
-54,48654,Female,1
-49,38666,Male,0
-50,50301,Female,0
-18,43776,Male,0
-36,85307,Female,1
-19,73224,Female,0
-61,59880,Male,0
-43,82199,Female,1
-49,61160,Male,1
-23,47080,Female,0
-49,82846,Male,1
-21,68083,Male,0
-28,44441,Female,0
-34,57144,Female,1
-55,46865,Male,0
-41,39258,Female,0
-22,73892,Female,1
-69,88641,Male,0
-51,39021,Male,1
-23,68444,Female,0
-39,50240,Male,1
-28,52693,Male,0
-65,51114,Male,0
-33,47040,Female,0
-50,60727,Female,1
-26,47535,Male,0
-23,64056,Female,0
-33,59246,Male,1
-46,56415,Female,1
-20,46386,Male,0
-37,51348,Male,0
-53,71330,Female,1
-36,67513,Male,1
-43,45336,Female,0
-20,61489,Female,0
-36,71270,Male,1
-37,34958,Male,0
-49,68150,Female,1
-24,50060,Male,0
-69,68558,Male,0
-58,48551,Male,0
-50,32926,Male,0
-57,35586,Male,0
-56,60721,Female,1
-35,63895,Female,1
-57,46435,Male,0
-18,69578,Male,0
-28,35077,Male,0
-45,59008,Female,1
-42,41834,Male,0
-67,50222,Female,0
-40,60710,Female,1
-48,47093,Female,0
-47,54231,Male,0
-59,75094,Female,1
-52,51346,Male,0
-24,72535,Female,0
-33,43054,Male,0
-43,67947,Female,1
-65,81623,Male,0
-69,22925,Female,0
-66,48046,Male,0
-19,68656,Male,1
-18,56954,Male,0
-65,65567,Male,1
-29,50940,Female,0
-22,61298,Female,0
-54,57664,Male,1
-49,77516,Female,1
-26,63816,Male,1
-58,65064,Male,1
-52,53821,Female,1
-36,52685,Male,0
-65,53511,Male,1
-33,65916,Female,1
-20,53685,Male,0
-37,64346,Male,1
-41,91131,Male,1
-50,73066,Male,1
-41,55109,Female,1
-69,78018,Female,1
-28,53878,Female,0
-66,29428,Male,0
-25,44878,Male,0
-53,31938,Female,0
-55,54727,Male,0
-57,60276,Male,1
-37,85146,Male,1
-52,64903,Male,1
-65,56713,Female,0
-42,72441,Female,1
-52,26832,Female,0
-42,63534,Male,1
-46,71562,Female,1
-35,37821,Female,0
-63,77156,Male,0
-35,65077,Male,1
-19,53770,Female,0
-52,69491,Female,1
-33,94060,Female,1
-58,62727,Female,1
-53,63723,Male,1
-50,53109,Female,1
-21,47252,Female,0
-50,72455,Male,1
-31,47158,Female,1
-38,61073,Male,1
-65,52835,Male,0
-37,67184,Male,1
-25,65004,Female,0
-24,75563,Female,1
-20,52349,Male,1
-34,55951,Female,1
-50,45318,Female,0
-65,53335,Male,0
-29,65659,Male,0
-68,71354,Female,1
-39,46167,Male,0
-39,73044,Female,1
-63,80334,Female,0
-47,66201,Female,1
-55,88151,Female,1
-55,48393,Male,0
-62,41330,Male,0
-68,33319,Male,0
-25,82440,Male,1
-44,69815,Female,1
-44,59166,Female,1
-51,64199,Male,1
-38,43117,Female,0
-47,96686,Female,1
-50,61938,Female,1
-45,61640,Male,1
-64,70886,Male,0
-50,67215,Male,1
-22,63358,Female,0
-65,48142,Male,1
-36,67072,Male,1
-21,88230,Male,0
-52,80181,Male,1
-66,83897,Male,0
-34,52331,Male,0
-61,45155,Female,0
-45,58113,Female,1
-47,60835,Male,1
-46,76412,Male,1
-63,34613,Female,0
-23,82943,Female,0
-52,57629,Male,1
-58,53596,Male,0
-54,44818,Male,0
-41,35177,Male,1
-46,72347,Female,1
-66,61099,Male,0
-63,40650,Male,0
-48,40573,Male,0
-52,54963,Male,0
-50,85035,Female,1
-69,56106,Female,0
-38,37452,Female,1
-49,56313,Male,1
-40,55909,Male,1
-50,19546,Female,1
-20,59185,Male,0
-35,56535,Male,1
-42,70443,Female,1
-59,87734,Female,1
-48,76898,Female,1
-20,55966,Female,1
-57,43402,Male,0
-63,98600,Male,0
-41,60888,Female,1
-67,60208,Male,0
-49,59638,Female,1
-64,62971,Female,0
-39,57834,Male,1
-40,51395,Female,0
-19,51797,Male,0
-44,59508,Male,1
-59,51848,Male,0
-19,49307,Male,0
-43,61596,Female,1
-34,56175,Male,1
-57,82559,Female,1
-50,20235,Female,0
-26,76372,Female,0
-60,78691,Female,1
-65,28899,Male,0
-56,54859,Male,0
-46,54428,Female,0
-59,38887,Female,1
-43,48332,Male,1
-52,43341,Female,0
-67,86284,Male,1
-42,74035,Female,1
-41,79073,Male,1
-30,70825,Female,0
-24,43064,Female,0
-53,52132,Male,0
-62,67340,Female,1
-37,41668,Female,0
-18,70694,Male,0
-25,56395,Female,0
-63,54377,Male,0
-33,70664,Male,1
-31,66663,Female,1
-29,54585,Female,0
-68,77389,Female,1
-40,43784,Female,0
-32,69239,Female,1
-45,68896,Female,1
-51,55356,Female,1
-19,64891,Male,0
-49,41233,Female,0
-40,73860,Male,1
-39,57226,Female,1
-68,52159,Female,1
-42,75735,Male,1
-39,49434,Female,0
-39,38873,Female,1
-66,36650,Male,0
-69,69090,Female,1
-59,40793,Female,0
-23,86321,Female,1
-32,28771,Male,1
-60,85446,Female,1
-54,63165,Female,1
-50,58549,Female,1
-25,51826,Female,0
-61,65987,Male,0
-61,59435,Male,0
-22,76549,Female,0
-56,61713,Female,1
-21,62254,Male,1
-23,54545,Male,0
-62,59145,Female,1
-49,64617,Male,1
-69,34347,Female,1
-47,39777,Male,1
-64,71148,Male,0
-52,62562,Male,1
-57,57240,Male,1
-69,60276,Female,0
-33,65213,Male,1
-30,51903,Male,0
-67,48325,Female,0
-59,62937,Male,1
-47,45324,Male,0
-36,66123,Female,1
-34,34461,Male,0
-36,75437,Female,1
-45,67088,Female,1
-43,63840,Female,1
-54,74740,Female,1
-43,84982,Male,1
-40,75215,Female,1
-26,32386,Male,0
-29,40806,Male,0
-18,50627,Male,0
-18,60391,Male,0
-64,67764,Male,0
-51,49113,Male,0
-49,62801,Male,1
-65,48669,Male,0
-42,50827,Male,0
-57,38900,Male,0
-62,46151,Female,0
-18,39724,Female,1
+age,income,gender,education_level,marital_status,children,job_type,previous_purchase,credit_score,interested_in_newsletter,purchased
+56,17871,Male,PhD,Widow,0,Student,32,383.125,False,0
+69,54069,Female,Bachelor,Married,2,Professional,16,806.9086956521738,False,0
+46,34872,Other,Bachelor,Widow,1,Unemployed,23,799.7369565217391,False,1
+32,21554,Male,Bachelor,Married,3,Student,36,732.5125,True,1
+60,37068,Female,PhD,Married,2,Student,1,611.0999999999999,False,0
+25,28369,Female,PhD,Single,0,Unemployed,31,850.0,False,0
+38,83742,Other,Bachelor,Single,4,Professional,23,850.0,False,0
+56,67632,Female,PhD,Widow,4,Professional,8,850.0,False,0
+36,49840,Male,PhD,Single,0,Unemployed,3,850.0,True,1
+40,79598,Female,PhD,Single,0,Professional,16,850.0,True,1
+28,51547,Male,Bachelor,Single,4,Student,16,850.0,False,0
+28,32774,Female,Bachelor,Widow,2,Unemployed,49,850.0,True,0
+41,80462,Other,Bachelor,Divorced,4,Student,47,850.0,True,1
+53,60778,Male,PhD,Single,0,Self-Employed,29,850.0,True,0
+57,29255,Female,Bachelor,Single,3,Self-Employed,39,578.1956140350877,False,0
+41,46193,Female,PhD,Widow,1,Professional,10,850.0,True,0
+20,32487,Female,High School,Divorced,3,Self-Employed,20,850.0,True,1
+39,22344,Male,PhD,Single,3,Student,20,599.873076923077,True,1
+19,68523,Male,Master,Married,0,Self-Employed,17,850.0,False,1
+41,88188,Male,Bachelor,Widow,4,Student,28,850.0,False,1
+61,22028,Other,Bachelor,Single,2,Professional,23,398.4147540983607,True,0
+47,61259,Other,Master,Single,3,Professional,9,850.0,True,1
+55,36987,Male,PhD,Married,4,Student,44,743.0909090909091,False,0
+19,40257,Female,High School,Married,2,Self-Employed,16,850.0,False,0
+38,38152,Other,Master,Widow,3,Professional,17,850.0,True,1
+50,32720,Male,Master,Widow,2,Unemployed,41,727.6999999999999,True,0
+29,50970,Female,PhD,Married,4,Professional,47,850.0,False,1
+39,33380,Other,Bachelor,Widow,1,Self-Employed,19,850.0,False,1
+61,55409,Female,PhD,Married,4,Unemployed,36,850.0,True,0
+42,48995,Female,Master,Single,0,Self-Employed,44,850.0,False,1
+66,45221,Female,Master,Married,2,Student,17,710.4666666666666,True,1
+44,31848,Female,Bachelor,Married,1,Unemployed,16,751.4681818181818,True,1
+59,38464,Other,Bachelor,Divorced,2,Self-Employed,8,659.2322033898305,True,0
+45,65107,Other,Bachelor,Married,2,Unemployed,13,850.0,False,0
+33,60018,Other,PhD,Married,3,Self-Employed,48,850.0,True,1
+32,30448,Male,Bachelor,Divorced,0,Unemployed,28,850.0,True,0
+64,51986,Other,Master,Widow,2,Self-Employed,30,850.0,False,1
+68,65027,Female,Master,Divorced,4,Student,3,850.0,False,0
+61,16611,Other,High School,Single,4,Unemployed,17,300.0,True,0
+69,60867,Female,PhD,Divorced,3,Unemployed,19,850.0,True,1
+20,36747,Male,High School,Single,0,Unemployed,46,850.0,False,0
+54,61411,Female,Master,Widow,0,Unemployed,42,850.0,False,0
+68,34734,Female,High School,Divorced,4,Student,43,579.3941176470588,False,0
+24,13902,Female,Master,Divorced,1,Unemployed,8,590.9,True,1
+38,17449,Male,High School,Widow,3,Professional,12,470.13421052631577,True,0
+26,50961,Other,Bachelor,Single,3,Student,14,850.0,True,0
+56,55194,Other,High School,Divorced,4,Professional,26,850.0,False,0
+35,31913,Male,Bachelor,Single,4,Unemployed,14,850.0,True,0
+21,62771,Female,Bachelor,Divorced,1,Self-Employed,27,850.0,False,1
+42,16769,Other,PhD,Married,1,Professional,36,466.91190476190474,True,0
+31,48678,Male,Bachelor,Divorced,0,Unemployed,18,850.0,False,0
+67,25779,Other,Bachelor,Widow,3,Professional,25,421.71119402985073,True,0
+26,36963,Male,High School,Widow,3,Unemployed,25,850.0,True,0
+43,50947,Female,Master,Single,4,Unemployed,24,850.0,False,0
+19,32791,Other,PhD,Divorced,0,Unemployed,25,850.0,False,1
+37,42308,Male,Bachelor,Single,3,Self-Employed,25,850.0,True,1
+45,70125,Other,PhD,Single,0,Professional,45,850.0,False,1
+64,38462,Other,High School,Married,0,Student,27,654.96875,False,1
+24,66713,Other,Bachelor,Married,4,Student,48,850.0,True,1
+61,27405,Other,High School,Widow,0,Student,17,483.26229508196724,False,0
+25,60596,Male,PhD,Single,1,Student,31,850.0,True,0
+64,78831,Female,High School,Widow,1,Unemployed,2,850.0,True,1
+52,567,Male,PhD,Divorced,2,Professional,1,300.0,False,0
+31,34062,Male,High School,Single,4,Professional,32,850.0,False,1
+34,61541,Male,PhD,Single,2,Self-Employed,41,850.0,True,0
+53,45939,Female,Master,Divorced,1,Professional,18,850.0,True,0
+67,57422,Other,High School,Divorced,2,Professional,16,850.0,True,0
+57,37920,Other,High School,Widow,4,Professional,43,733.8631578947369,True,0
+21,51731,Other,Master,Widow,4,Self-Employed,32,850.0,True,0
+19,46886,Female,Master,Divorced,0,Student,11,850.0,True,1
+23,73355,Other,High School,Widow,3,Professional,48,850.0,False,1
+59,55088,Female,Master,Divorced,0,Self-Employed,2,850.0,False,0
+21,56752,Other,Bachelor,Single,4,Self-Employed,42,850.0,False,0
+46,41762,Other,PhD,Single,1,Unemployed,48,850.0,True,1
+35,40247,Male,PhD,Married,1,Self-Employed,25,850.0,False,1
+43,41348,Female,PhD,Single,0,Student,34,850.0,True,1
+61,57889,Male,Bachelor,Divorced,4,Professional,7,850.0,True,0
+51,41580,Male,Master,Widow,1,Self-Employed,35,850.0,False,1
+27,55795,Male,Master,Married,4,Student,6,850.0,True,1
+53,91508,Female,High School,Widow,1,Self-Employed,45,850.0,True,1
+31,67422,Female,Master,Divorced,4,Self-Employed,45,850.0,True,1
+48,43479,Other,High School,Single,2,Self-Employed,35,850.0,True,0
+65,74024,Male,Bachelor,Married,4,Self-Employed,15,850.0,True,1
+32,41838,Other,PhD,Divorced,4,Self-Employed,23,850.0,True,0
+25,9237,Male,PhD,Married,0,Student,0,369.48,False,1
+31,29838,Female,PhD,Married,2,Professional,48,850.0,True,1
+40,12584,Female,Master,Single,3,Professional,24,349.55,True,0
+57,42969,Female,High School,Divorced,0,Professional,9,771.8421052631579,True,1
+38,50368,Male,High School,Widow,3,Professional,15,850.0,True,1
+33,83528,Female,Bachelor,Married,1,Student,15,850.0,False,1
+62,56538,Male,Master,Married,3,Unemployed,7,850.0,False,0
+35,45617,Other,Bachelor,Widow,4,Unemployed,28,850.0,True,0
+64,66588,Male,High School,Divorced,3,Student,38,850.0,True,0
+41,5777,Other,High School,Married,0,Student,27,300.0,True,0
+43,54712,Male,PhD,Married,0,Self-Employed,5,850.0,False,1
+42,65417,Other,Master,Married,3,Self-Employed,15,850.0,False,1
+62,20428,Female,High School,Divorced,0,Self-Employed,19,367.48387096774195,False,0
+58,72875,Other,PhD,Divorced,0,Professional,15,850.0,False,1
+46,56769,Female,Master,Widow,3,Self-Employed,6,850.0,True,1
+32,41694,Female,Bachelor,Divorced,2,Unemployed,40,850.0,False,1
+62,62655,Other,Master,Divorced,2,Professional,13,850.0,False,1
+18,95413,Male,Master,Single,1,Self-Employed,42,850.0,True,1
+42,53637,Male,High School,Widow,0,Professional,25,850.0,True,0
+24,54964,Male,High School,Married,3,Unemployed,25,850.0,False,1
+26,40812,Male,Master,Divorced,0,Self-Employed,13,850.0,False,1
+41,33003,Male,High School,Married,4,Unemployed,6,799.5512195121952,False,0
+18,66606,Female,High School,Married,0,Unemployed,32,850.0,False,1
+61,32878,Male,High School,Single,0,Unemployed,25,588.983606557377,True,0
+25,51431,Female,PhD,Divorced,2,Self-Employed,44,850.0,True,0
+41,40446,Female,PhD,Widow,3,Student,19,850.0,False,1
+28,59579,Female,Master,Divorced,0,Self-Employed,2,850.0,False,1
+68,56673,Other,High School,Married,2,Unemployed,3,830.7264705882352,False,1
+34,70750,Other,PhD,Widow,1,Self-Employed,25,850.0,False,0
+25,39799,Female,Master,Divorced,2,Unemployed,10,850.0,False,1
+52,44602,Other,High School,Married,2,Student,1,850.0,True,0
+52,30424,Male,Bachelor,Married,2,Professional,13,602.376923076923,True,1
+50,41114,Male,High School,Single,0,Student,43,850.0,True,1
+22,57546,Female,High School,Single,0,Student,29,850.0,False,1
+59,65139,Male,PhD,Single,1,Professional,48,850.0,False,1
+56,31556,Female,Master,Married,4,Self-Employed,11,568.1,True,0
+58,67392,Female,Master,Divorced,4,Professional,25,850.0,True,1
+45,77112,Male,PhD,Single,4,Self-Employed,43,850.0,False,0
+24,58268,Other,High School,Divorced,1,Self-Employed,32,850.0,True,0
+26,87535,Male,Bachelor,Single,4,Unemployed,12,850.0,False,1
+25,34524,Male,High School,Widow,4,Unemployed,13,850.0,False,0
+29,25106,Female,High School,Widow,2,Professional,23,850.0,True,0
+51,14425,Female,Bachelor,Single,0,Student,33,348.84313725490193,True,0
+50,79920,Female,PhD,Married,0,Professional,43,850.0,True,1
+65,63087,Female,Master,Single,2,Self-Employed,25,850.0,False,1
+40,48888,Other,PhD,Single,2,Unemployed,20,850.0,False,1
+41,55599,Other,PhD,Married,2,Professional,27,850.0,True,1
+54,27490,Other,High School,Widow,0,Professional,47,603.0740740740741,False,0
+52,98915,Female,Master,Divorced,4,Unemployed,35,850.0,False,0
+61,52584,Female,Master,Single,2,Unemployed,39,850.0,False,1
+57,52187,Female,PhD,Married,1,Unemployed,1,850.0,True,0
+39,64515,Other,Bachelor,Single,2,Self-Employed,41,850.0,False,0
+44,59620,Female,PhD,Married,3,Unemployed,8,850.0,True,0
+52,54477,Male,Bachelor,Divorced,2,Student,22,850.0,True,0
+18,34190,Male,Master,Divorced,0,Professional,14,850.0,False,1
+52,59429,Female,PhD,Widow,2,Unemployed,12,850.0,True,0
+54,87640,Male,High School,Married,3,Unemployed,22,850.0,False,0
+64,76908,Male,PhD,Married,1,Self-Employed,16,850.0,True,1
+31,81863,Other,Master,Widow,4,Self-Employed,47,850.0,True,0
+20,39775,Female,High School,Widow,2,Professional,1,850.0,False,1
+18,30207,Female,High School,Married,3,Student,19,850.0,True,1
+22,47484,Other,Bachelor,Widow,3,Professional,19,850.0,True,1
+43,51114,Male,High School,Divorced,1,Unemployed,45,850.0,True,0
+31,71883,Male,High School,Single,0,Student,2,850.0,False,1
+56,16150,Female,PhD,Divorced,2,Student,11,301.6928571428572,False,0
+44,80591,Male,Master,Widow,3,Student,39,850.0,True,1
+26,46839,Other,Bachelor,Married,1,Student,1,850.0,True,1
+32,41462,Other,PhD,Married,4,Professional,35,850.0,True,1
+32,29757,Female,High School,Divorced,3,Self-Employed,13,850.0,False,1
+43,16902,Other,High School,Married,1,Self-Employed,15,418.7197674418604,False,1
+59,66463,Other,Bachelor,Widow,0,Unemployed,18,850.0,True,0
+30,51466,Female,Master,Divorced,0,Self-Employed,33,850.0,False,0
+68,24200,Other,Bachelor,Married,3,Self-Employed,43,428.83235294117645,False,1
+49,24098,Other,PhD,Single,3,Self-Employed,45,568.745918367347,False,1
+56,43284,Other,Bachelor,Single,2,Self-Employed,5,774.2285714285714,False,0
+66,83380,Male,High School,Widow,1,Unemployed,12,850.0,True,0
+69,44808,Female,PhD,Married,3,Professional,35,706.3413043478262,False,0
+49,19937,Female,High School,Widow,2,Student,21,440.1775510204082,False,1
+21,45085,Female,Master,Divorced,2,Self-Employed,17,850.0,True,1
+47,44545,Male,High School,Single,3,Professional,11,850.0,True,0
+54,-3937,Male,High School,Divorced,0,Self-Employed,29,300.0,False,0
+40,48914,Female,Bachelor,Married,1,Self-Employed,39,850.0,False,1
+56,45381,Male,High School,Widow,1,Student,6,818.025,True,0
+62,63924,Female,PhD,Widow,0,Student,31,850.0,True,1
+32,86979,Male,PhD,Widow,3,Student,47,850.0,True,0
+60,72531,Other,Master,Divorced,1,Self-Employed,18,850.0,False,0
+46,44622,Other,PhD,Single,3,Self-Employed,5,850.0,False,1
+53,27869,Female,Bachelor,Divorced,3,Self-Employed,19,550.7801886792454,True,0
+30,101467,Male,Master,Divorced,2,Student,26,850.0,False,1
+49,51184,Male,PhD,Married,0,Unemployed,42,850.0,True,0
+24,50278,Other,Bachelor,Married,3,Professional,36,850.0,False,1
+68,49517,Other,PhD,Married,4,Unemployed,47,804.7911764705883,True,1
+39,53961,Male,PhD,Single,0,Self-Employed,6,850.0,True,0
+45,47112,Male,High School,Single,1,Self-Employed,4,850.0,False,0
+19,38526,Male,PhD,Married,2,Unemployed,10,850.0,False,1
+59,39062,Male,PhD,Married,1,Self-Employed,14,685.7177966101694,False,0
+62,49344,Male,Bachelor,Single,1,Professional,2,795.5209677419355,False,0
+23,39131,Male,Bachelor,Widow,0,Self-Employed,4,850.0,False,1
+45,35743,Female,High School,Single,1,Professional,22,833.9388888888889,False,0
+45,52128,Male,PhD,Single,3,Unemployed,36,850.0,True,0
+61,44900,Other,High School,Single,1,Unemployed,8,747.7155737704918,False,0
+61,80079,Female,PhD,Married,2,Self-Employed,14,850.0,True,1
+37,-3019,Male,Master,Widow,2,Professional,2,300.0,True,0
+47,71830,Other,Master,Single,4,Self-Employed,28,850.0,False,1
+28,74921,Female,High School,Married,2,Student,5,850.0,True,1
+45,8532,Other,High School,Divorced,1,Student,16,300.0,True,0
+42,43146,Male,High School,Divorced,2,Student,25,850.0,False,0
+56,42571,Male,Bachelor,Single,0,Student,20,800.1964285714286,False,0
+50,21849,Male,Bachelor,Divorced,2,Self-Employed,7,442.28000000000003,False,0
+18,34443,Male,Bachelor,Widow,3,Student,20,850.0,True,1
+44,27788,Female,High School,Divorced,0,Professional,10,651.5454545454545,False,1
+69,85045,Female,PhD,Divorced,4,Unemployed,37,850.0,False,1
+30,68713,Other,Master,Widow,3,Unemployed,7,850.0,False,1
+58,75431,Male,High School,Single,1,Student,41,850.0,False,0
+20,64433,Other,Bachelor,Single,1,Student,23,850.0,True,1
+56,27418,Female,Bachelor,Widow,1,Student,34,553.2571428571429,False,1
+23,39509,Male,High School,Widow,3,Self-Employed,13,850.0,True,1
+25,59787,Male,High School,Widow,3,Unemployed,13,850.0,False,1
+44,25557,Female,Bachelor,Divorced,3,Student,9,585.7909090909092,True,0
+26,64259,Female,PhD,Widow,0,Professional,11,850.0,True,1
+54,45193,Female,Bachelor,Married,0,Student,37,850.0,True,0
+50,42503,Female,Bachelor,Divorced,1,Unemployed,43,850.0,False,0
+68,64219,Female,High School,Single,2,Student,45,850.0,True,0
+59,58885,Male,PhD,Single,1,Unemployed,33,850.0,False,0
+61,42780,Female,Bachelor,Single,4,Student,40,763.911475409836,False,0
+41,73186,Male,Bachelor,Divorced,0,Professional,9,850.0,False,0
+32,28378,Male,Master,Married,3,Student,16,850.0,False,0
+49,62318,Female,High School,Widow,0,Professional,16,850.0,False,0
+49,61862,Female,Master,Widow,3,Professional,2,850.0,True,0
+41,43809,Male,Master,Single,4,Student,30,850.0,False,1
+58,56522,Female,Bachelor,Single,4,Professional,0,850.0,True,1
+69,24977,Female,High School,Divorced,0,Self-Employed,11,383.9855072463768,True,1
+66,68480,Female,PhD,Married,3,Student,38,850.0,True,1
+66,46301,Other,Bachelor,Widow,4,Student,3,690.130303030303,True,0
+69,39545,Male,PhD,Divorced,1,Professional,41,650.7659420289855,True,0
+29,70980,Other,PhD,Widow,1,Professional,12,850.0,True,1
+56,35913,Female,High School,Single,3,Student,33,694.2535714285715,True,0
+19,21830,Other,Master,Widow,0,Self-Employed,41,850.0,False,1
+20,18867,Female,High School,Married,4,Professional,20,850.0,True,1
+66,62120,Other,PhD,Married,0,Professional,21,850.0,False,1
+54,24391,Female,Bachelor,Single,1,Unemployed,3,453.33518518518514,True,0
+66,85095,Other,PhD,Married,4,Self-Employed,17,850.0,True,1
+34,8361,Other,Bachelor,Married,0,Self-Employed,4,300.0,True,0
+66,83929,Other,Bachelor,Divorced,2,Student,18,850.0,True,1
+19,54220,Male,High School,Widow,3,Self-Employed,1,850.0,False,0
+19,48065,Other,PhD,Single,3,Student,11,850.0,False,0
+45,39101,Male,Master,Single,2,Unemployed,16,850.0,False,0
+40,57982,Female,PhD,Single,1,Self-Employed,9,850.0,True,1
+54,49247,Other,PhD,Single,4,Professional,33,850.0,True,1
+49,72066,Female,Master,Single,3,Unemployed,5,850.0,True,0
+50,52284,Female,High School,Married,2,Student,7,850.0,False,0
+18,53006,Other,PhD,Divorced,2,Unemployed,10,850.0,True,1
+36,42727,Male,PhD,Single,1,Student,11,850.0,False,1
+19,48861,Other,Bachelor,Divorced,1,Unemployed,8,850.0,False,0
+61,56156,Female,PhD,Divorced,0,Student,1,850.0,True,1
+43,15796,Female,Master,Married,3,Self-Employed,7,368.2988372093023,True,0
+49,23036,Other,Bachelor,Single,0,Professional,10,490.1224489795918,False,1
+23,64865,Male,High School,Married,2,Student,35,850.0,False,0
+49,53417,Male,Bachelor,Single,4,Unemployed,9,850.0,False,0
+21,46320,Female,Master,Married,4,Student,20,850.0,True,1
+28,50368,Female,Master,Divorced,1,Student,19,850.0,True,1
+34,56951,Male,Bachelor,Single,4,Student,47,850.0,True,1
+55,39204,Other,High School,Widow,4,Unemployed,7,709.4,True,0
+41,34433,Female,Bachelor,Divorced,4,Professional,35,850.0,True,0
+22,53916,Male,High School,Widow,2,Self-Employed,28,850.0,True,1
+69,30432,Female,Bachelor,Divorced,4,Professional,41,505.64347826086953,False,0
+51,58165,Other,Master,Married,4,Student,11,850.0,False,1
+23,15948,Male,PhD,Single,4,Unemployed,13,701.9913043478261,False,1
+39,70583,Female,PhD,Divorced,0,Professional,47,850.0,True,1
+28,59451,Other,High School,Married,2,Student,49,850.0,False,0
+65,55120,Female,High School,Single,1,Self-Employed,20,850.0,True,1
+33,69653,Other,High School,Single,0,Self-Employed,21,850.0,True,1
+50,83309,Other,Master,Divorced,3,Self-Employed,20,850.0,False,1
+26,70287,Male,Bachelor,Single,2,Student,43,850.0,True,1
+23,13182,Other,Master,Divorced,2,Unemployed,49,662.4304347826087,False,1
+33,24408,Female,PhD,Single,3,Professional,29,784.5863636363637,False,0
+46,37503,Other,High School,Widow,3,Self-Employed,38,850.0,True,1
+20,50521,Other,Bachelor,Married,3,Student,19,850.0,False,0
+37,60353,Male,PhD,Widow,1,Student,23,850.0,False,0
+53,35485,Other,PhD,Divorced,4,Professional,22,696.1283018867924,False,0
+36,53735,Other,PhD,Widow,2,Self-Employed,6,850.0,False,0
+43,34892,Female,Master,Divorced,4,Student,8,810.0418604651163,True,0
+20,37769,Male,High School,Single,4,Professional,0,850.0,False,1
+36,21866,Male,PhD,Single,3,Unemployed,25,644.338888888889,False,0
+37,31535,Male,High School,Divorced,1,Unemployed,37,850.0,False,1
+49,22966,Other,Master,Widow,0,Unemployed,37,542.6938775510205,True,0
+24,30482,Male,PhD,Single,1,Self-Employed,43,850.0,False,1
+69,71072,Other,Master,Married,4,Professional,21,850.0,True,1
+58,31012,Other,Master,Single,1,Professional,43,616.3396551724138,False,0
+50,102647,Female,High School,Married,3,Student,9,850.0,False,1
+57,59866,Female,PhD,Widow,0,Student,5,850.0,False,1
+56,53696,Female,Master,Married,3,Student,16,850.0,True,1
+35,32832,Female,PhD,Married,0,Professional,49,850.0,True,1
+57,64006,Female,High School,Married,4,Student,37,850.0,True,1
+18,38487,Other,Master,Married,0,Professional,23,850.0,True,1
+28,52440,Other,High School,Single,0,Professional,9,850.0,True,1
+45,101201,Male,PhD,Married,0,Unemployed,7,850.0,True,1
+42,48078,Other,PhD,Single,1,Student,20,850.0,False,0
+67,72985,Other,High School,Married,1,Unemployed,5,850.0,True,1
+40,35936,Female,Bachelor,Divorced,4,Self-Employed,20,850.0,False,1
+48,49300,Other,Master,Widow,0,Self-Employed,38,850.0,True,1
+47,85416,Female,PhD,Married,2,Self-Employed,23,850.0,True,1
+59,37460,Male,PhD,Divorced,4,Professional,32,681.5152542372881,True,0
+52,86248,Male,Master,Married,0,Professional,17,850.0,False,1
+24,64155,Other,High School,Married,0,Professional,27,850.0,True,1
+33,38750,Male,High School,Married,1,Student,31,850.0,True,1
+43,62648,Other,High School,Divorced,4,Unemployed,11,850.0,False,0
+65,69451,Male,Bachelor,Widow,0,Professional,47,850.0,False,1
+69,62436,Female,Bachelor,Divorced,0,Unemployed,41,850.0,False,1
+66,18595,Female,PhD,Widow,4,Unemployed,26,316.3424242424243,False,0
+19,35457,Female,High School,Married,2,Unemployed,9,850.0,True,0
+18,45049,Female,Master,Single,4,Student,45,850.0,False,1
+65,48511,Other,PhD,Married,4,Student,41,810.9230769230769,True,0
+29,62413,Male,Master,Widow,2,Self-Employed,31,850.0,True,1
+22,53554,Other,PhD,Divorced,4,Self-Employed,41,850.0,False,1
+54,23293,Female,Bachelor,Married,0,Unemployed,25,481.35185185185185,True,0
+49,57603,Other,PhD,Divorced,4,Self-Employed,24,850.0,False,1
+26,62211,Male,Bachelor,Divorced,2,Unemployed,10,850.0,True,1
+58,61195,Other,PhD,Divorced,3,Student,22,850.0,False,1
+52,71615,Male,High School,Married,4,Student,33,850.0,False,1
+36,66678,Other,Master,Divorced,1,Student,39,850.0,False,1
+65,59183,Male,High School,Divorced,0,Professional,22,850.0,False,0
+33,48596,Male,PhD,Married,0,Unemployed,28,850.0,False,1
+20,16780,Female,PhD,Divorced,1,Student,30,850.0,False,0
+37,58592,Male,PhD,Married,1,Unemployed,6,850.0,True,0
+41,54153,Female,Bachelor,Widow,4,Self-Employed,39,850.0,True,0
+50,55431,Female,Master,Widow,1,Self-Employed,32,850.0,True,0
+41,24465,Female,Master,Widow,3,Student,20,623.6573170731708,False,0
+69,28378,Other,PhD,Divorced,2,Unemployed,1,404.5753623188406,True,0
+28,71063,Other,PhD,Single,1,Student,17,850.0,False,1
+66,49208,Other,Bachelor,Single,1,Self-Employed,46,833.2257575757576,True,1
+25,63630,Other,High School,Divorced,3,Student,32,850.0,True,1
+53,50566,Male,High School,Single,0,Unemployed,36,850.0,False,0
+55,50595,Male,Master,Married,0,Self-Employed,33,850.0,True,1
+57,68765,Other,Bachelor,Single,4,Professional,19,850.0,True,1
+37,39679,Male,PhD,Divorced,3,Self-Employed,34,850.0,True,0
+52,51922,Male,Master,Divorced,2,Professional,49,850.0,False,1
+65,40754,Female,Bachelor,Married,2,Student,17,652.2846153846153,True,0
+42,41310,Female,High School,Widow,3,Student,45,850.0,False,1
+52,43816,Female,Bachelor,Divorced,2,Unemployed,23,850.0,True,0
+42,54442,Female,High School,Married,0,Professional,7,850.0,True,0
+46,40425,Male,Bachelor,Single,2,Student,29,850.0,True,0
+35,75115,Other,Master,Single,2,Professional,43,850.0,True,0
+63,32107,Male,High School,Married,3,Student,9,514.5849206349208,False,1
+35,46262,Male,Master,Married,3,Self-Employed,22,850.0,True,0
+19,41205,Male,Master,Divorced,2,Student,48,850.0,False,1
+52,78939,Female,High School,Single,1,Unemployed,10,850.0,False,1
+33,53931,Female,High School,Married,3,Self-Employed,1,850.0,True,1
+58,70636,Female,PhD,Single,4,Unemployed,25,850.0,True,1
+53,20288,Other,PhD,Married,4,Self-Employed,35,435.3924528301887,False,0
+50,55341,Male,PhD,Single,0,Professional,32,850.0,False,1
+21,67792,Other,Master,Widow,2,Unemployed,46,850.0,True,1
+50,51645,Female,Master,Divorced,1,Student,12,850.0,True,0
+31,71309,Other,PhD,Single,0,Professional,39,850.0,True,1
+38,39654,Male,Master,Widow,2,Student,24,850.0,True,0
+65,78186,Male,Master,Single,3,Self-Employed,3,850.0,True,1
+37,95977,Female,High School,Single,4,Self-Employed,41,850.0,False,0
+25,42743,Female,High School,Widow,1,Student,18,850.0,True,1
+24,41089,Other,Master,Single,4,Student,17,850.0,True,1
+20,79067,Female,PhD,Single,3,Professional,36,850.0,False,0
+34,81591,Female,Bachelor,Divorced,2,Student,29,850.0,True,1
+50,39542,Male,PhD,Widow,3,Unemployed,18,813.7900000000001,True,0
+65,41596,Female,Bachelor,Widow,3,Unemployed,22,670.8884615384616,False,0
+29,44364,Female,PhD,Married,4,Student,15,850.0,True,1
+68,23110,Male,High School,Single,1,Unemployed,0,335.5029411764706,False,0
+39,31626,Male,Master,Divorced,3,Student,11,819.873076923077,True,1
+39,29917,Other,Master,Single,4,Professional,23,795.7025641025641,True,1
+63,34644,Female,High School,Single,1,Unemployed,33,611.5547619047619,True,0
+47,49306,Male,Bachelor,Married,2,Unemployed,7,850.0,False,0
+55,54684,Other,Bachelor,Single,2,Student,17,850.0,False,1
+55,81010,Other,Bachelor,Divorced,0,Unemployed,47,850.0,False,1
+62,30032,Female,High School,Divorced,4,Self-Employed,4,474.98709677419356,False,0
+68,69686,Female,Bachelor,Married,1,Professional,25,850.0,True,0
+25,45720,Other,High School,Single,3,Professional,29,850.0,False,0
+44,49010,Male,PhD,Divorced,2,Unemployed,12,850.0,False,0
+44,63496,Other,PhD,Single,1,Unemployed,18,850.0,False,0
+51,27545,Female,High School,Single,4,Self-Employed,28,578.6980392156863,True,0
+38,57648,Male,Master,Single,0,Self-Employed,2,850.0,True,1
+47,53329,Male,PhD,Married,2,Unemployed,25,850.0,False,1
+50,59849,Other,Bachelor,Single,1,Unemployed,39,850.0,False,1
+45,55783,Female,High School,Divorced,1,Self-Employed,11,850.0,True,1
+64,99106,Other,Bachelor,Single,1,Student,1,850.0,False,1
+50,37245,Other,Bachelor,Divorced,4,Self-Employed,10,747.5,False,1
+22,39380,Other,Master,Single,4,Student,43,850.0,False,1
+65,37537,Male,Bachelor,Divorced,4,Professional,27,614.0923076923077,False,0
+36,38890,Male,Master,Divorced,3,Professional,17,850.0,True,1
+21,37252,Female,PhD,Single,1,Self-Employed,12,850.0,True,1
+52,73780,Female,High School,Single,2,Student,36,850.0,True,0
+66,78410,Other,Bachelor,Divorced,4,Self-Employed,21,850.0,False,0
+34,38585,Other,High School,Widow,4,Self-Employed,11,850.0,False,0
+61,33352,Other,Bachelor,Married,1,Student,1,544.4040983606557,True,1
+45,59428,Female,High School,Widow,4,Self-Employed,36,850.0,True,0
+47,38955,Male,Bachelor,Widow,3,Professional,6,827.7797872340426,True,0
+46,62658,Male,Bachelor,Single,3,Unemployed,25,850.0,False,0
+63,54058,Other,Bachelor,Married,4,Unemployed,25,850.0,True,0
+23,19685,Other,Bachelor,Widow,1,Self-Employed,23,850.0,False,0
+52,80950,Other,Bachelor,Single,1,Student,11,850.0,False,0
+58,85917,Other,Bachelor,Widow,1,Student,15,850.0,True,0
+54,37744,Female,Bachelor,Widow,0,Professional,22,742.9629629629629,True,1
+41,42245,Male,Bachelor,Single,4,Student,39,850.0,False,0
+46,55717,Other,Bachelor,Single,1,Student,8,850.0,True,0
+66,56689,Female,High School,Single,3,Professional,31,850.0,True,0
+63,63170,Other,Master,Married,2,Self-Employed,14,850.0,False,1
+48,90204,Other,Bachelor,Widow,2,Unemployed,36,850.0,False,0
+52,46461,Male,Master,Single,1,Professional,12,850.0,False,1
+50,34034,Other,Bachelor,Divorced,2,Self-Employed,4,679.9799999999999,False,0
+69,22413,Male,Bachelor,Widow,2,Professional,10,336.12608695652176,False,0
+38,35381,Male,High School,Divorced,0,Self-Employed,9,850.0,True,1
+49,49337,Male,PhD,Married,3,Professional,12,850.0,False,0
+40,85891,Female,PhD,Single,3,Self-Employed,40,850.0,False,1
+50,39647,Female,High School,Divorced,0,Professional,45,850.0,False,1
+20,54475,Male,Master,Married,0,Self-Employed,49,850.0,True,1
+35,49671,Other,PhD,Single,2,Professional,14,850.0,False,1
+42,73767,Male,High School,Divorced,4,Unemployed,41,850.0,False,0
+59,100538,Other,High School,Divorced,2,Unemployed,6,850.0,False,1
+48,39382,Male,PhD,Married,0,Student,39,850.0,True,1
+20,40211,Other,Master,Single,3,Self-Employed,27,850.0,False,0
+57,70883,Female,High School,Single,2,Professional,31,850.0,False,1
+63,63637,Other,Bachelor,Divorced,4,Self-Employed,34,850.0,False,1
+41,86934,Male,Master,Divorced,2,Unemployed,14,850.0,True,1
+67,61678,Female,Master,Divorced,1,Self-Employed,47,850.0,True,0
+49,42814,Other,PhD,Single,2,Professional,35,850.0,True,1
+64,61813,Other,PhD,Married,0,Self-Employed,20,850.0,True,1
+39,72174,Other,Bachelor,Married,3,Professional,5,850.0,False,1
+40,66409,Other,High School,Single,3,Unemployed,0,850.0,False,0
+19,60145,Other,PhD,Widow,0,Unemployed,3,850.0,True,1
+44,71333,Female,PhD,Married,1,Unemployed,10,850.0,True,0
+59,73385,Female,Master,Divorced,0,Student,43,850.0,False,1
+19,77643,Female,PhD,Widow,2,Unemployed,25,850.0,False,1
+43,62974,Female,PhD,Widow,0,Self-Employed,36,850.0,True,1
+34,46657,Male,PhD,Married,0,Student,22,850.0,True,1
+57,52934,Female,PhD,Widow,1,Unemployed,28,850.0,True,0
+50,74130,Other,Master,Widow,2,Self-Employed,20,850.0,True,0
+26,33661,Other,Bachelor,Married,4,Self-Employed,47,850.0,False,0
+60,57373,Female,Bachelor,Married,4,Self-Employed,44,850.0,True,0
+65,42133,Other,High School,Widow,3,Professional,44,723.1500000000001,True,0
+56,50574,Female,PhD,Divorced,0,Student,48,850.0,False,1
+46,75569,Other,Master,Single,3,Self-Employed,26,850.0,False,1
+59,53821,Male,High School,Widow,1,Professional,38,850.0,False,0
+43,50928,Male,High School,Widow,4,Unemployed,39,850.0,False,0
+52,22802,Female,Bachelor,Divorced,0,Self-Employed,12,462.5,False,0
+67,64925,Female,Master,Widow,1,Professional,22,850.0,True,0
+42,62909,Female,Master,Widow,1,Self-Employed,15,850.0,True,0
+41,93265,Other,Master,Single,0,Student,29,850.0,True,1
+30,43844,Female,Bachelor,Single,1,Student,3,850.0,False,1
+24,54383,Male,Bachelor,Single,0,Unemployed,39,850.0,True,1
+53,54987,Other,Bachelor,Married,0,Self-Employed,15,850.0,False,1
+62,81549,Female,Bachelor,Married,2,Professional,30,850.0,True,0
+37,48094,Other,Bachelor,Single,3,Unemployed,41,850.0,True,0
+18,55580,Other,PhD,Single,1,Self-Employed,24,850.0,False,0
+25,62157,Female,PhD,Married,1,Unemployed,43,850.0,False,1
+63,53732,Other,Master,Divorced,2,Professional,11,850.0,True,0
+33,41071,Male,High School,Widow,2,Unemployed,25,850.0,True,1
+31,53881,Male,Master,Widow,2,Unemployed,36,850.0,True,1
+29,71472,Other,High School,Single,4,Unemployed,47,850.0,True,1
+68,29469,Female,Bachelor,Divorced,4,Self-Employed,32,479.96764705882356,True,0
+40,52659,Other,High School,Married,4,Professional,27,850.0,False,1
+32,35997,Male,Master,Single,0,Student,8,850.0,False,0
+45,73900,Other,Master,Divorced,1,Self-Employed,11,850.0,False,1
+51,19536,Other,High School,Divorced,3,Student,4,378.00882352941176,False,0
+19,38821,Male,PhD,Divorced,0,Student,27,850.0,True,1
+49,57544,Other,Bachelor,Married,1,Self-Employed,34,850.0,True,0
+40,81310,Other,Bachelor,Married,1,Self-Employed,4,850.0,False,0
+39,48684,Female,Master,Widow,2,Professional,33,850.0,True,1
+68,38896,Female,PhD,Widow,2,Professional,45,653.3,False,1
+42,87623,Male,High School,Divorced,0,Unemployed,33,850.0,True,0
+39,21039,Male,Bachelor,Divorced,2,Student,12,554.7615384615384,True,0
+39,6023,Male,PhD,Married,1,Professional,38,300.0,True,0
+66,58800,Female,Bachelor,Widow,2,Unemployed,41,850.0,False,0
+69,39958,Male,PhD,Divorced,4,Professional,44,649.7014492753624,False,1
+59,29575,Male,PhD,Widow,2,Self-Employed,47,586.5711864406779,False,1
+23,64167,Male,Master,Widow,1,Professional,13,850.0,False,1
+32,54876,Female,Bachelor,Divorced,0,Student,10,850.0,True,1
+60,38718,Other,High School,Married,3,Professional,41,714.25,True,1
+54,24393,Male,Master,Divorced,2,Student,37,517.0222222222221,True,0
+50,67449,Other,Master,Divorced,1,Self-Employed,3,850.0,True,0
+25,63004,Male,High School,Widow,3,Student,32,850.0,False,0
+61,48016,Other,Master,Divorced,3,Professional,6,786.0975409836066,True,1
+61,86932,Female,PhD,Married,4,Unemployed,40,850.0,True,0
+22,28598,Female,PhD,Divorced,3,Self-Employed,7,850.0,True,0
+56,19489,Male,Bachelor,Married,1,Professional,36,415.66785714285714,False,0
+21,36161,Other,Bachelor,Married,1,Self-Employed,9,850.0,False,0
+23,49088,Female,High School,Widow,2,Self-Employed,42,850.0,False,0
+62,54866,Male,Bachelor,Single,2,Professional,14,850.0,True,1
+49,45175,Male,PhD,Single,2,Professional,37,850.0,False,1
+69,57041,Female,High School,Widow,3,Unemployed,14,841.6311594202899,True,0
+47,24969,Female,High School,Divorced,3,Self-Employed,4,526.2053191489363,True,0
+64,78875,Male,Bachelor,Widow,4,Self-Employed,28,850.0,True,1
+52,48356,Other,PhD,Married,2,Professional,18,850.0,False,1
+57,72345,Other,High School,Single,0,Student,9,850.0,False,1
+69,56854,Other,PhD,Widow,4,Professional,11,828.5710144927536,True,0
+33,59135,Male,PhD,Divorced,0,Self-Employed,3,850.0,True,0
+30,61395,Female,PhD,Widow,3,Professional,30,850.0,False,0
+67,58954,Male,Bachelor,Single,4,Unemployed,17,850.0,False,0
+59,62854,Female,Master,Widow,4,Student,15,850.0,False,0
+47,76583,Other,Master,Widow,1,Professional,39,850.0,True,1
+36,53930,Other,High School,Single,3,Unemployed,35,850.0,True,0
+34,64180,Female,PhD,Married,3,Self-Employed,24,850.0,True,0
+36,48205,Female,Bachelor,Married,4,Professional,22,850.0,False,1
+45,78802,Male,PhD,Single,3,Self-Employed,11,850.0,False,0
+43,36472,Other,PhD,Widow,4,Unemployed,33,850.0,False,1
+54,86018,Male,Bachelor,Single,1,Self-Employed,35,850.0,True,1
+43,49196,Male,Master,Married,4,Unemployed,36,850.0,True,0
+40,21384,Male,PhD,Divorced,3,Unemployed,2,525.5500000000001,False,1
+26,52562,Other,PhD,Widow,3,Unemployed,8,850.0,True,0
+29,36378,Male,Master,Married,4,Professional,17,850.0,False,0
+18,66812,Male,Bachelor,Widow,4,Self-Employed,42,850.0,True,1
+18,36947,Male,High School,Single,4,Self-Employed,34,850.0,False,1
+64,41076,Male,Master,Divorced,2,Student,33,699.1125,True,1
+51,12209,Male,High School,Single,3,Student,40,306.34215686274507,True,0
+49,40953,Male,High School,Divorced,3,Student,13,848.7255102040817,False,0
+65,1522,Other,Master,Widow,2,Student,3,300.0,False,0
+42,18321,Male,PhD,Widow,4,Self-Employed,28,474.81428571428575,False,0
+57,65208,Female,High School,Single,1,Unemployed,40,850.0,False,1
+62,65716,Male,High School,Divorced,4,Unemployed,44,850.0,False,0
+18,58509,Male,Bachelor,Divorced,4,Professional,49,850.0,True,1
+33,30660,Other,PhD,Widow,2,Unemployed,14,850.0,False,0
+56,49045,Other,High School,Single,3,Self-Employed,27,850.0,False,0
+22,49927,Female,Bachelor,Divorced,4,Self-Employed,41,850.0,False,0
+39,26832,Female,PhD,Widow,3,Self-Employed,15,704.95,True,1
+46,80067,Other,Master,Married,0,Professional,11,850.0,False,1
+20,67547,Other,Master,Single,3,Student,4,850.0,False,0
+29,45580,Male,Bachelor,Married,1,Unemployed,33,850.0,False,1
+43,50537,Other,Master,Single,1,Self-Employed,41,850.0,True,0
+33,54167,Female,High School,Widow,4,Self-Employed,0,850.0,True,0
+68,9165,Male,PhD,Divorced,3,Student,38,300.0,False,0
+54,45056,Female,High School,Divorced,4,Self-Employed,31,850.0,True,0
+39,36360,Male,High School,Divorced,2,Unemployed,25,850.0,False,0
+46,29967,Other,Master,Single,1,Professional,16,679.1065217391304,True,0
+31,44377,Female,High School,Widow,4,Self-Employed,47,850.0,False,1
+45,85953,Male,Master,Married,2,Unemployed,26,850.0,True,1
+22,62816,Male,PhD,Widow,4,Self-Employed,23,850.0,False,1
+64,38576,Other,PhD,Married,3,Student,34,657.7,False,0
+66,61451,Other,High School,Single,3,Self-Employed,45,850.0,True,0
+47,77987,Other,Bachelor,Single,3,Self-Employed,41,850.0,False,0
+63,68492,Female,Master,Married,3,Professional,38,850.0,False,0
+69,51192,Male,Master,Married,0,Student,25,791.9130434782609,False,1
+22,37061,Other,High School,Married,2,Student,48,850.0,False,1
+29,63964,Female,Master,Widow,2,Professional,37,850.0,True,1
+33,57869,Female,Master,Married,3,Self-Employed,22,850.0,False,1
+43,67903,Female,Bachelor,Single,0,Unemployed,21,850.0,True,1
+43,62703,Other,Bachelor,Single,3,Student,3,850.0,True,0
+65,70991,Other,High School,Divorced,0,Student,48,850.0,True,1
+38,39295,Male,Bachelor,Married,3,Self-Employed,8,850.0,True,0
+56,76347,Male,High School,Widow,1,Self-Employed,3,850.0,False,0
+53,53951,Other,PhD,Widow,1,Student,6,850.0,False,0
+50,91505,Female,High School,Widow,4,Self-Employed,22,850.0,True,1
+47,36216,Female,PhD,Divorced,3,Unemployed,1,759.5031914893617,False,1
+54,84719,Female,High School,Single,2,Student,48,850.0,True,0
+40,53958,Male,Master,Widow,4,Unemployed,23,850.0,False,1
+27,36971,Female,Bachelor,Single,1,Unemployed,39,850.0,False,1
+22,40322,Male,PhD,Divorced,3,Self-Employed,30,850.0,False,1
+53,43593,Male,High School,Married,4,Unemployed,46,850.0,True,1
+51,58483,Female,Bachelor,Married,3,Self-Employed,30,850.0,True,1
+69,60456,Female,High School,Married,1,Professional,46,850.0,False,1
+48,38525,Other,Bachelor,Widow,4,Self-Employed,39,850.0,True,0
+27,49512,Other,Bachelor,Married,1,Unemployed,47,850.0,True,1
+36,92845,Female,High School,Widow,0,Professional,42,850.0,False,1
+49,84550,Male,PhD,Divorced,1,Self-Employed,33,850.0,True,1
+18,58726,Male,PhD,Divorced,3,Unemployed,23,850.0,False,0
+22,50760,Male,Master,Widow,2,Student,48,850.0,False,0
+62,52400,Male,Bachelor,Single,1,Student,25,850.0,False,1
+21,62270,Male,Master,Married,2,Self-Employed,15,850.0,True,1
+33,29544,Other,Master,Married,0,Self-Employed,46,850.0,False,0
+41,44852,Female,High School,Married,4,Student,12,850.0,False,1
+33,16628,Other,High School,Widow,4,Unemployed,14,514.4787878787879,True,0
+19,57984,Male,High School,Divorced,2,Unemployed,26,850.0,True,0
+66,62943,Male,Bachelor,Married,4,Unemployed,3,850.0,True,1
+45,40336,Male,High School,Divorced,1,Self-Employed,15,850.0,True,0
+49,81479,Male,High School,Married,2,Professional,29,850.0,False,0
+44,25484,Female,Bachelor,Married,3,Professional,43,652.1318181818182,True,1
+37,20712,Male,Bachelor,Widow,1,Professional,29,613.4337837837837,True,0
+41,54489,Female,PhD,Single,1,Professional,35,850.0,True,1
+29,70941,Male,High School,Widow,1,Professional,2,850.0,True,0
+67,83678,Female,High School,Married,3,Self-Employed,21,850.0,False,0
+52,40822,Other,High School,Married,0,Self-Employed,48,850.0,True,0
+50,71573,Male,PhD,Single,4,Professional,21,850.0,False,0
+50,49229,Female,High School,Divorced,2,Self-Employed,49,850.0,True,0
+68,46547,Other,PhD,Divorced,0,Self-Employed,49,782.5147058823529,False,1
+60,67673,Male,Master,Married,2,Professional,48,850.0,False,1
+54,63046,Male,PhD,Divorced,4,Unemployed,11,850.0,True,0
+29,18472,Male,Master,Married,3,Self-Employed,20,663.9155172413793,False,0
+20,79530,Female,High School,Single,1,Unemployed,3,850.0,True,0
+18,77601,Female,Master,Single,1,Self-Employed,30,850.0,False,0
+50,37488,Other,PhD,Married,3,Self-Employed,43,822.71,False,0
+57,57916,Female,Bachelor,Single,0,Professional,30,850.0,False,0
+27,59880,Female,Master,Widow,0,Self-Employed,22,850.0,True,1
+60,55213,Male,Master,Widow,2,Student,19,850.0,False,0
+61,38993,Male,High School,Single,3,Student,14,654.1795081967214,True,0
+46,36567,Male,PhD,Married,0,Professional,22,838.9347826086956,False,1
+30,49488,Male,Master,Married,3,Unemployed,27,850.0,False,1
+29,73454,Male,Master,Single,4,Unemployed,15,850.0,False,0
+48,60872,Male,Master,Divorced,1,Unemployed,36,850.0,False,1
+63,42587,Male,Master,Widow,1,Student,20,711.634126984127,False,1
+19,65433,Other,Bachelor,Divorced,1,Unemployed,14,850.0,False,1
+68,-6970,Other,PhD,Married,3,Unemployed,16,300.0,True,0
+67,72975,Other,High School,Married,3,Professional,49,850.0,True,0
+52,15205,Other,High School,Divorced,2,Unemployed,36,355.70384615384614,True,0
+40,42751,Male,Bachelor,Single,1,Student,12,850.0,False,0
+34,27606,Other,PhD,Divorced,2,Student,18,839.2411764705882,True,0
+43,24106,Male,Master,Divorced,1,Student,29,614.2546511627907,False,1
+25,73216,Other,Bachelor,Widow,2,Professional,44,850.0,True,1
+46,40645,Female,PhD,Widow,2,Professional,17,850.0,True,0
+43,56930,Other,Master,Divorced,4,Self-Employed,13,850.0,False,0
+27,49061,Other,Bachelor,Divorced,2,Unemployed,35,850.0,False,1
+43,59540,Male,PhD,Married,3,Professional,35,850.0,True,1
+51,51536,Other,High School,Widow,2,Student,19,850.0,True,1
+68,24340,Female,High School,Widow,1,Student,18,389.5911764705882,True,0
+58,69925,Male,PhD,Married,2,Professional,44,850.0,True,1
+24,40124,Male,High School,Single,0,Professional,43,850.0,False,1
+21,18868,Other,PhD,Widow,1,Professional,6,850.0,True,1
+67,41437,Male,Master,Widow,0,Self-Employed,43,704.4626865671642,False,0
+62,80015,Male,PhD,Single,1,Student,3,850.0,False,1
+28,67004,Male,Master,Widow,3,Self-Employed,33,850.0,True,0
+46,43026,Male,Bachelor,Widow,3,Self-Employed,1,850.0,False,0
+53,43014,Male,PhD,Single,3,Unemployed,4,806.5349056603774,True,0
+42,43567,Male,Bachelor,Single,0,Student,9,850.0,False,0
+38,91534,Female,High School,Divorced,4,Student,31,850.0,False,1
+53,57638,Other,Master,Married,1,Professional,41,850.0,True,1
+27,58600,Female,PhD,Married,3,Professional,40,850.0,False,1
+54,70605,Male,Bachelor,Single,1,Unemployed,12,850.0,False,1
+26,54775,Male,Master,Single,0,Self-Employed,38,850.0,True,1
+41,44819,Other,Master,Widow,4,Professional,4,850.0,False,1
+52,46073,Female,High School,Divorced,0,Professional,9,850.0,False,1
+66,48567,Other,High School,Divorced,1,Student,9,749.5136363636364,True,0
+52,49255,Female,Master,Single,4,Student,37,850.0,True,0
+65,64552,Male,Master,Widow,4,Professional,26,850.0,False,1
+53,51038,Other,PhD,Widow,0,Student,20,850.0,False,1
+35,64652,Other,Master,Married,3,Unemployed,7,850.0,False,1
+66,48385,Male,PhD,Married,1,Professional,0,728.7560606060606,True,0
+56,51572,Other,Master,Widow,2,Student,27,850.0,False,0
+49,10035,Female,High School,Married,2,Unemployed,48,300.0,False,0
+41,68326,Female,PhD,Single,0,Student,38,850.0,False,0
+40,56929,Female,Bachelor,Widow,1,Student,13,850.0,False,1
+49,69960,Female,High School,Married,1,Student,20,850.0,False,1
+54,-7925,Male,PhD,Divorced,0,Professional,29,300.0,False,0
+29,91767,Other,PhD,Widow,1,Self-Employed,20,850.0,True,0
+66,47208,Female,Bachelor,Widow,3,Student,48,798.2227272727273,True,1
+30,72163,Male,PhD,Divorced,0,Unemployed,8,850.0,False,1
+40,29201,Other,Master,Single,3,Professional,16,748.975,False,0
+42,62255,Other,Bachelor,Divorced,1,Professional,4,850.0,True,0
+52,28931,Male,High School,Widow,0,Unemployed,30,616.3653846153846,True,1
+58,37524,Male,High School,Single,1,Student,39,720.6155172413793,True,0
+47,88280,Female,Master,Married,0,Self-Employed,37,850.0,False,1
+34,46186,Other,High School,Married,1,Student,42,850.0,False,1
+66,54348,Other,PhD,Married,3,Unemployed,18,846.4045454545455,False,0
+37,67401,Male,PhD,Widow,3,Professional,35,850.0,False,0
+65,59913,Other,Master,Divorced,1,Self-Employed,49,850.0,True,0
+42,53008,Female,High School,Single,0,Professional,32,850.0,True,1
+39,57299,Other,High School,Married,2,Unemployed,12,850.0,True,1
+30,98068,Male,Master,Single,3,Student,13,850.0,True,1
+36,48847,Male,Bachelor,Widow,3,Self-Employed,32,850.0,False,0
+66,54021,Female,High School,Married,2,Professional,28,850.0,False,1
+53,71013,Female,Bachelor,Widow,1,Professional,42,850.0,True,1
+29,72110,Other,High School,Divorced,0,Professional,48,850.0,True,0
+58,73740,Other,High School,Widow,1,Student,35,850.0,True,1
+36,62774,Male,High School,Widow,4,Self-Employed,43,850.0,True,1
+29,27139,Female,High School,Divorced,3,Student,9,850.0,True,1
+26,82668,Female,PhD,Single,4,Student,30,850.0,False,0
+24,27073,Female,Bachelor,Divorced,3,Student,5,850.0,False,1
+45,56052,Other,Bachelor,Divorced,3,Unemployed,0,850.0,True,1
+31,34914,Female,High School,Widow,4,Unemployed,6,850.0,True,0
+48,48717,Male,High School,Single,4,Unemployed,26,850.0,True,1
+69,56575,Male,Bachelor,Married,1,Self-Employed,20,850.0,False,1
+36,56427,Other,PhD,Divorced,4,Student,27,850.0,False,1
+64,58438,Other,Master,Single,1,Student,15,850.0,False,1
+33,82274,Female,Master,Divorced,1,Unemployed,45,850.0,True,0
+22,59070,Other,Bachelor,Divorced,1,Student,22,850.0,False,1
+52,45116,Male,High School,Divorced,3,Student,19,850.0,True,0
+29,69281,Female,High School,Divorced,3,Professional,37,850.0,False,1
+42,73789,Male,PhD,Widow,4,Student,24,850.0,False,1
+69,25447,Female,Master,Single,3,Professional,27,409.74710144927536,False,0
+38,61948,Other,PhD,Single,4,Student,4,850.0,True,0
+53,64023,Female,Master,Single,3,Self-Employed,20,850.0,True,0
+40,44048,Female,Bachelor,Divorced,0,Unemployed,17,850.0,False,0
+33,77514,Male,Master,Widow,0,Professional,46,850.0,True,0
+56,46998,Male,PhD,Divorced,4,Unemployed,5,831.85,True,1
+62,52511,Female,PhD,Divorced,3,Professional,28,850.0,True,0
+59,46538,Other,PhD,Single,3,Professional,18,811.7296610169492,True,1
+56,50311,Other,Bachelor,Divorced,1,Professional,32,850.0,True,1
+31,28074,Male,Master,Married,2,Self-Employed,0,850.0,True,1
+48,21198,Other,Master,Divorced,4,Student,44,512.225,True,1
+22,81890,Male,PhD,Married,2,Professional,2,850.0,False,1
+52,33060,Other,Master,Divorced,2,Self-Employed,41,709.0692307692307,True,0
+40,30172,Female,High School,Widow,4,Professional,20,776.9,True,0
+46,6932,Male,High School,Widow,3,Student,34,300.0,False,0
+60,37220,Male,High School,Single,4,Professional,40,682.9333333333334,False,1
+28,23538,Female,Master,Divorced,2,Self-Employed,39,850.0,False,0
+35,82840,Male,Bachelor,Married,3,Student,2,850.0,False,0
+64,70196,Other,Bachelor,Married,0,Self-Employed,24,850.0,True,0
+29,36236,Other,Bachelor,Divorced,4,Student,44,850.0,False,1
+26,95048,Male,Bachelor,Married,4,Student,37,850.0,False,1
+27,69635,Other,High School,Widow,3,Unemployed,44,850.0,True,0
+61,43503,Male,High School,Married,0,Unemployed,19,751.1639344262295,True,0
+34,11,Female,PhD,Single,0,Unemployed,43,300.0,True,0
+55,95818,Male,Master,Widow,3,Student,44,850.0,False,1
+24,22208,Female,Master,Widow,1,Professional,33,850.0,True,1
+63,17092,Other,Bachelor,Widow,4,Self-Employed,20,300.0,False,0
+30,70451,Female,High School,Divorced,4,Self-Employed,47,850.0,True,0
+57,98795,Other,Bachelor,Divorced,2,Self-Employed,22,850.0,True,1
+59,77685,Male,PhD,Widow,3,Unemployed,5,850.0,False,1
+26,61278,Other,Master,Divorced,2,Student,12,850.0,True,0
+67,61895,Male,Master,Married,2,Unemployed,48,850.0,True,0
+44,67068,Male,Bachelor,Divorced,0,Professional,22,850.0,True,0
+19,65178,Female,PhD,Divorced,4,Student,8,850.0,True,1
+22,55623,Female,Master,Widow,2,Self-Employed,16,850.0,True,0
+46,52084,Female,PhD,Single,0,Unemployed,1,850.0,False,1
+54,48748,Female,PhD,Single,3,Unemployed,18,850.0,False,0
+55,34920,Other,Bachelor,Single,2,Professional,18,662.2090909090908,True,0
+36,44386,Other,High School,Married,4,Professional,6,850.0,False,0
+25,16140,Other,Bachelor,Divorced,2,Unemployed,41,718.9,False,0
+65,48033,Male,High School,Single,3,Professional,41,807.9192307692308,False,0
+62,30228,Other,PhD,Widow,2,Self-Employed,19,516.8483870967741,True,0
+18,27928,Other,High School,Single,4,Professional,8,850.0,True,0
+39,53597,Other,PhD,Single,0,Professional,16,850.0,True,1
+69,77840,Female,Master,Divorced,4,Unemployed,26,850.0,False,0
+34,68366,Other,Master,Divorced,0,Unemployed,46,850.0,False,1
+24,18589,Male,Master,Divorced,1,Student,1,772.1916666666666,True,0
+42,30207,Female,Bachelor,Married,4,Student,35,771.8142857142857,True,0
+62,68815,Male,Bachelor,Married,4,Unemployed,18,850.0,False,1
+21,30350,Other,PhD,Single,3,Professional,16,850.0,False,1
+53,45507,Female,Master,Divorced,2,Professional,4,850.0,True,1
+23,61001,Male,Bachelor,Single,0,Student,38,850.0,False,0
+48,30633,Other,Master,Widow,0,Student,17,672.1875,False,0
+36,52107,Male,Bachelor,Widow,3,Student,6,850.0,False,1
+61,23319,Male,High School,Divorced,3,Self-Employed,16,401.22868852459015,False,0
+56,37972,Male,High School,Divorced,2,Self-Employed,38,745.3714285714285,False,0
+44,56395,Other,Master,Widow,2,Student,35,850.0,False,1
+27,18140,Other,PhD,Divorced,4,Professional,39,732.4518518518519,False,1
+43,58809,Male,Bachelor,Married,1,Student,44,850.0,True,1
+36,49607,Female,Bachelor,Married,2,Self-Employed,3,850.0,True,1
+56,61049,Female,High School,Divorced,3,Professional,37,850.0,False,1
+20,54478,Other,High School,Widow,2,Self-Employed,24,850.0,False,0
+62,77282,Other,PhD,Single,0,Professional,4,850.0,False,1
+30,52504,Other,PhD,Divorced,1,Self-Employed,29,850.0,True,1
+67,41411,Other,PhD,Divorced,4,Professional,11,622.6746268656717,True,0
+45,52445,Other,Master,Single,0,Professional,3,850.0,False,1
+37,60865,Female,High School,Divorced,0,Professional,23,850.0,True,1
+45,50977,Other,Master,Single,1,Professional,28,850.0,False,1
+25,50811,Male,High School,Widow,4,Unemployed,8,850.0,False,1
+58,35960,Male,High School,Married,3,Self-Employed,3,612.95,False,1
+56,36741,Female,Bachelor,Widow,4,Self-Employed,23,684.6892857142857,False,0
+18,21947,Male,High School,Married,2,Unemployed,13,850.0,False,1
+20,84991,Female,High School,Single,0,Professional,4,850.0,False,1
+30,25122,Female,Master,Married,2,Professional,17,850.0,False,1
+45,36141,Male,High School,Widow,3,Self-Employed,41,850.0,True,1
+66,35631,Other,Master,Married,2,Unemployed,18,567.1636363636363,False,1
+42,67898,Male,PhD,Single,4,Professional,11,850.0,True,1
+50,44101,Male,High School,Married,2,Professional,17,850.0,False,0
+55,74954,Female,High School,Divorced,3,Professional,16,850.0,False,0
+23,36530,Male,Master,Widow,3,Student,29,850.0,True,1
+61,55579,Female,PhD,Divorced,3,Unemployed,23,850.0,True,0
+62,33293,Other,Bachelor,Single,4,Professional,10,539.583870967742,False,0
+49,92902,Other,PhD,Married,3,Student,34,850.0,True,1
+62,26248,Other,Master,Divorced,0,Unemployed,22,467.35483870967744,False,0
+64,56196,Male,PhD,Divorced,3,Professional,16,850.0,False,0
+38,62675,Female,Master,Married,2,Self-Employed,0,850.0,True,0
+33,58275,Other,Master,Married,2,Student,14,850.0,True,1
+38,46294,Female,Bachelor,Widow,2,Student,31,850.0,True,0
+28,47403,Female,High School,Divorced,4,Professional,8,850.0,True,1
+54,50876,Other,Master,Divorced,2,Professional,14,850.0,False,1
+53,47059,Other,Master,Single,4,Student,27,850.0,True,1
+52,69277,Female,Bachelor,Widow,4,Self-Employed,23,850.0,True,1
+36,94210,Other,Master,Single,3,Self-Employed,34,850.0,True,1
+37,38850,Female,High School,Divorced,0,Unemployed,21,850.0,True,1
+35,22603,Female,Bachelor,Single,3,Professional,26,684.75,True,0
+64,48234,Other,High School,Divorced,3,Self-Employed,18,776.60625,False,0
+58,101594,Male,High School,Divorced,4,Unemployed,44,850.0,False,0
+66,33926,Other,Bachelor,Single,4,Self-Employed,11,518.630303030303,True,0
+31,82782,Male,Master,Single,2,Professional,19,850.0,True,0
+32,83554,Female,High School,Married,2,Unemployed,0,850.0,False,1
+48,38928,Female,High School,Married,3,Unemployed,20,837.95,True,1
+18,61379,Male,High School,Married,1,Unemployed,48,850.0,False,0
+20,82567,Female,High School,Divorced,1,Self-Employed,44,850.0,False,0
+33,42417,Male,Bachelor,Single,2,Professional,0,850.0,True,1
+40,45928,Male,Bachelor,Widow,1,Unemployed,9,850.0,False,0
+28,38366,Female,PhD,Divorced,2,Student,46,850.0,True,1
+29,29704,Male,PhD,Widow,4,Professional,31,850.0,True,0
+27,37014,Other,High School,Single,3,Student,38,850.0,False,0
+49,25521,Other,Master,Divorced,0,Student,21,562.8367346938776,False,0
+33,50681,Female,High School,Widow,3,Unemployed,17,850.0,True,0
+25,34600,Female,Master,Widow,2,Unemployed,47,850.0,False,0
+55,54675,Male,High School,Married,2,Self-Employed,45,850.0,True,1
+29,18882,Male,PhD,Married,3,Self-Employed,31,700.0534482758621,False,1
+41,56617,Male,PhD,Married,2,Self-Employed,26,850.0,False,0
+45,66670,Male,Master,Divorced,1,Professional,27,850.0,True,0
+25,10125,Other,High School,Single,1,Self-Employed,17,434.65,True,0
+45,57481,Other,Master,Single,2,Student,38,850.0,True,0
+53,74553,Female,PhD,Married,2,Self-Employed,48,850.0,False,1
+43,25807,Male,High School,Married,1,Unemployed,28,651.8127906976744,True,0
+25,83451,Male,High School,Married,2,Self-Employed,17,850.0,True,1
+67,58380,Female,Master,Widow,2,Professional,43,850.0,False,1
+45,35899,Male,Bachelor,Married,3,Professional,7,798.7055555555556,False,0
+45,48884,Male,Master,Widow,0,Student,30,850.0,True,0
+54,61166,Male,PhD,Single,1,Professional,33,850.0,True,1
+58,51520,Male,PhD,Divorced,3,Self-Employed,6,850.0,True,0
+53,60775,Male,PhD,Divorced,0,Unemployed,35,850.0,True,1
+44,31586,Female,PhD,Divorced,2,Professional,17,743.1636363636363,False,0
+34,53387,Male,PhD,Divorced,2,Student,37,850.0,False,0
+26,21725,Female,Bachelor,Widow,3,Self-Employed,8,838.5269230769231,True,1
+50,47775,Male,High School,Widow,2,Student,8,850.0,True,0
+37,31921,Other,Master,Married,4,Professional,45,850.0,True,1
+30,35289,Other,Master,Widow,3,Professional,7,850.0,False,0
+45,74721,Other,PhD,Married,0,Student,34,850.0,True,1
+65,71826,Other,Master,Married,3,Self-Employed,17,850.0,True,1
+46,62182,Female,PhD,Divorced,1,Professional,4,850.0,False,0
+30,28153,Female,Bachelor,Widow,3,Unemployed,13,850.0,False,0
+63,43671,Male,Bachelor,Widow,2,Professional,27,738.4904761904761,True,1
+52,74261,Other,High School,Married,2,Self-Employed,29,850.0,True,0
+23,52834,Female,Bachelor,Married,4,Professional,3,850.0,False,1
+35,96386,Male,Bachelor,Single,4,Student,38,850.0,True,1
+68,57866,Male,High School,Single,4,Professional,19,850.0,True,0
+22,53840,Female,Master,Married,0,Professional,24,850.0,False,0
+64,43817,Other,PhD,Single,4,Self-Employed,27,721.240625,False,0
+42,52670,Male,PhD,Single,0,Student,11,850.0,False,0
+19,46950,Other,Master,Married,4,Self-Employed,1,850.0,True,1
+27,64162,Other,High School,Married,0,Professional,42,850.0,False,1
+47,69134,Other,Master,Widow,3,Unemployed,13,850.0,False,1
+67,34280,Male,Bachelor,Married,3,Professional,21,540.5917910447762,True,0
+62,23375,Other,High School,Married,2,Self-Employed,30,428.31612903225806,True,0
+22,13275,Male,High School,Divorced,0,Unemployed,22,647.4090909090909,False,0
+50,60159,Other,High School,Widow,1,Self-Employed,47,850.0,False,1
+18,27932,Male,PhD,Widow,2,Self-Employed,19,850.0,True,1
+35,6942,Other,Master,Widow,3,Student,37,300.0,True,0
+49,57771,Female,High School,Divorced,0,Unemployed,3,850.0,False,0
+64,99859,Other,High School,Married,4,Professional,14,850.0,False,1
+66,49878,Other,High School,Widow,1,Self-Employed,23,797.3772727272727,True,1
+28,66769,Male,Master,Widow,3,Professional,24,850.0,False,1
+38,51636,Male,PhD,Single,2,Student,0,850.0,True,0
+43,48022,Other,Bachelor,Widow,0,Student,6,850.0,False,1
+42,68381,Female,PhD,Married,1,Unemployed,30,850.0,True,0
+39,44194,Female,High School,Married,0,Student,11,850.0,True,1
+44,55347,Male,PhD,Single,4,Student,41,850.0,False,0
+66,56433,Female,PhD,Widow,2,Professional,4,850.0,False,1
+30,36638,Other,Bachelor,Widow,0,Student,43,850.0,True,1
+50,69840,Male,Master,Widow,3,Student,49,850.0,False,1
+51,46500,Other,Master,Divorced,2,Self-Employed,41,850.0,False,1
+58,34885,Male,PhD,Widow,3,Student,37,662.4155172413793,False,0
+52,60730,Male,PhD,Married,0,Self-Employed,11,850.0,True,1
+18,32030,Male,Master,Married,2,Student,38,850.0,False,1
+38,50563,Male,Master,Divorced,3,Student,17,850.0,False,0
+65,49817,Female,Bachelor,Divorced,4,Unemployed,1,751.0153846153846,True,0
+23,71717,Other,High School,Widow,4,Unemployed,9,850.0,False,0
+45,59493,Other,PhD,Single,0,Self-Employed,14,850.0,False,1
+34,49499,Other,Master,Divorced,2,Student,29,850.0,True,0
+22,66355,Male,PhD,Divorced,1,Professional,43,850.0,True,1
+48,77804,Female,PhD,Widow,2,Unemployed,16,850.0,False,1
+22,61156,Other,Master,Widow,4,Professional,3,850.0,False,1
+55,50207,Female,Bachelor,Divorced,3,Unemployed,6,850.0,True,1
+20,23763,Male,PhD,Single,1,Unemployed,40,850.0,True,0
+40,28697,Other,Bachelor,Divorced,0,Student,30,777.425,False,0
+54,43895,Female,Master,Widow,1,Unemployed,38,850.0,False,0
+54,37809,Male,High School,Widow,0,Professional,33,766.1666666666666,False,1
+27,46260,Female,High School,Divorced,1,Unemployed,5,850.0,True,0
+27,51132,Other,PhD,Single,0,Self-Employed,49,850.0,False,0
+36,60593,Other,Master,Divorced,0,Student,37,850.0,True,0
+34,48590,Male,Bachelor,Divorced,1,Student,44,850.0,True,0
+38,59730,Male,PhD,Widow,1,Self-Employed,33,850.0,True,0
+31,51289,Male,Master,Single,0,Self-Employed,43,850.0,False,1
+26,10490,Female,Master,Married,4,Self-Employed,14,414.0615384615385,False,1
+63,31213,Female,Bachelor,Single,1,Unemployed,13,517.0944444444444,False,0
+18,47118,Female,PhD,Divorced,2,Student,5,850.0,True,1
+68,25806,Male,Master,Divorced,3,Self-Employed,49,464.45,False,0
+62,61998,Other,Master,Divorced,0,Unemployed,36,850.0,True,0
+30,80615,Other,Master,Single,0,Self-Employed,49,850.0,True,0
+21,74375,Female,Bachelor,Widow,3,Professional,31,850.0,True,1
+18,45731,Female,PhD,Divorced,4,Professional,2,850.0,True,1
+66,79814,Other,PhD,Divorced,3,Student,2,850.0,True,0
+57,52973,Other,PhD,Single,1,Unemployed,21,850.0,True,0
+49,43258,Female,PhD,Married,3,Professional,21,850.0,False,1
+51,37731,Female,High School,Married,0,Professional,9,757.8235294117648,True,1
+45,43950,Other,High School,Widow,3,Unemployed,2,850.0,False,0
+48,42236,Male,PhD,Widow,2,Self-Employed,11,850.0,True,0
+25,53408,Female,Bachelor,Divorced,1,Unemployed,28,850.0,False,0
+56,53211,Other,High School,Single,3,Self-Employed,47,850.0,False,0
+43,50060,Other,Master,Divorced,0,Professional,16,850.0,False,0
+51,58738,Other,High School,Widow,1,Professional,6,850.0,False,1
+20,73812,Other,Master,Single,0,Professional,12,850.0,True,1
+67,68991,Male,PhD,Single,4,Student,1,850.0,True,0
+29,20302,Other,High School,Widow,2,Student,3,697.3689655172413,True,0
+18,-1078,Female,Bachelor,Married,4,Student,9,300.0,True,0
+61,68686,Male,High School,Married,2,Unemployed,38,850.0,False,1
+22,22662,Other,High School,Single,3,Professional,23,850.0,False,0
+47,45504,Male,High School,Divorced,1,Professional,16,850.0,False,0
+47,26597,Female,PhD,Married,3,Unemployed,5,562.8436170212766,True,0
+34,13960,Other,Bachelor,Divorced,2,Student,18,437.88823529411764,False,0
+65,60829,Female,High School,Married,2,Unemployed,4,850.0,True,0
+64,65183,Other,Bachelor,Married,2,Student,31,850.0,False,1
+40,38469,Other,PhD,Divorced,0,Professional,9,850.0,False,0
+32,-1820,Other,Master,Widow,1,Self-Employed,8,300.0,False,0
+54,39075,Other,High School,Married,3,Student,26,762.5611111111111,False,0
+38,57836,Other,Bachelor,Married,3,Professional,12,850.0,False,1
+31,20421,Male,Bachelor,Divorced,4,Professional,18,677.341935483871,True,1
+19,53667,Other,PhD,Widow,2,Self-Employed,20,850.0,False,1
+28,49693,Other,High School,Married,2,Professional,23,850.0,True,1
+68,61585,Male,Master,Married,2,Professional,37,850.0,True,1
+56,52391,Male,Bachelor,Widow,3,Student,3,850.0,True,0
+55,30538,Male,High School,Married,4,Student,23,583.8363636363637,True,0
+51,73931,Male,Master,Widow,0,Self-Employed,34,850.0,True,1
+55,46829,Male,Bachelor,Widow,1,Self-Employed,2,850.0,True,0
+67,49453,Male,Bachelor,Divorced,0,Professional,3,744.1044776119403,True,0
+51,31334,Other,Master,Single,3,Student,36,673.3421568627451,True,1
+35,41134,Other,Master,Widow,2,Self-Employed,39,850.0,False,1
+47,32303,Female,PhD,Divorced,1,Self-Employed,47,776.9478723404255,False,1
+32,46541,Other,High School,Single,3,Unemployed,34,850.0,True,1
+44,84234,Other,High School,Married,3,Self-Employed,30,850.0,True,1
+68,22561,Male,PhD,Single,3,Professional,43,404.72941176470584,True,0
+51,17728,Male,Bachelor,Widow,1,Student,24,391.2578431372549,False,1
+69,79423,Other,Master,Widow,1,Self-Employed,39,850.0,False,0
+55,45813,Female,Master,Widow,4,Unemployed,12,839.5636363636364,True,0
+50,36618,Male,Master,Widow,4,Student,3,720.96,True,1
+41,70798,Other,Bachelor,Widow,0,Self-Employed,45,850.0,False,1
+32,37887,Other,Master,Divorced,1,Unemployed,13,850.0,False,0
+47,86520,Female,Master,Widow,1,Self-Employed,12,850.0,True,1
+59,63558,Female,PhD,Divorced,1,Student,26,850.0,True,0
+68,40241,Male,Bachelor,Married,4,Student,5,584.3794117647059,True,0
+34,93146,Female,High School,Widow,3,Student,16,850.0,True,0
+22,37885,Other,PhD,Widow,2,Professional,35,850.0,False,1
+46,64841,Other,PhD,Single,4,Self-Employed,39,850.0,False,1
+21,55985,Female,High School,Married,1,Professional,48,850.0,True,1
+27,76034,Female,PhD,Widow,4,Student,34,850.0,True,1
+34,81230,Female,Bachelor,Widow,0,Unemployed,16,850.0,True,1
+27,50640,Female,Master,Married,1,Self-Employed,40,850.0,False,1
+34,34931,Male,Bachelor,Divorced,0,Professional,1,850.0,True,0
+37,59199,Female,High School,Widow,1,Self-Employed,12,850.0,True,1
+41,36445,Male,High School,Single,4,Unemployed,1,850.0,True,0
+22,90267,Other,PhD,Widow,3,Professional,27,850.0,False,0
+51,52730,Female,Bachelor,Single,2,Student,42,850.0,True,0
+23,42693,Male,Bachelor,Single,0,Professional,25,850.0,False,1
+19,53693,Female,High School,Widow,4,Self-Employed,21,850.0,True,1
+30,23057,Other,Bachelor,Widow,3,Self-Employed,46,847.5166666666668,True,1
+60,30567,Other,High School,Single,4,Self-Employed,42,576.0500000000001,True,0
+60,74008,Other,Bachelor,Married,0,Self-Employed,2,850.0,False,1
+65,36862,Female,Bachelor,Married,2,Student,34,626.4076923076923,True,0
+28,29061,Female,Bachelor,Widow,4,Professional,11,850.0,True,0
+68,60733,Male,High School,Divorced,1,Student,23,850.0,False,1
+64,73714,Other,PhD,Married,3,Student,4,850.0,False,0
+40,64379,Female,Bachelor,Widow,4,Student,19,850.0,False,1
+33,69920,Other,High School,Married,3,Self-Employed,38,850.0,True,0
+48,34864,Other,High School,Divorced,1,Self-Employed,38,797.9833333333333,False,1
+28,21563,Male,Bachelor,Widow,2,Self-Employed,12,785.4071428571428,True,0
+33,80026,Male,Bachelor,Divorced,2,Professional,40,850.0,False,0
+25,43546,Male,PhD,Widow,1,Unemployed,44,850.0,False,0
+21,44983,Male,High School,Divorced,3,Self-Employed,11,850.0,False,0
+57,76563,Other,High School,Married,4,Professional,12,850.0,True,0
+21,61124,Male,Master,Married,1,Self-Employed,9,850.0,True,0
+42,59117,Male,High School,Divorced,0,Self-Employed,32,850.0,True,0
+20,93300,Male,PhD,Divorced,3,Student,39,850.0,True,1
+49,37129,Male,Master,Divorced,2,Student,15,779.0346938775509,True,1
+20,68556,Other,Master,Widow,1,Student,44,850.0,True,1
+44,51140,Male,Master,Married,2,Professional,34,850.0,True,1
+46,55371,Other,Bachelor,Widow,3,Unemployed,2,850.0,True,0
+49,80569,Female,Bachelor,Married,2,Unemployed,4,850.0,True,1
+67,60156,Other,High School,Single,1,Professional,25,850.0,False,1
+68,60765,Other,Master,Widow,3,Self-Employed,10,850.0,False,0
+36,71450,Male,PhD,Married,0,Professional,6,850.0,True,1
+38,42700,Female,Bachelor,Married,1,Self-Employed,9,850.0,True,1
+22,33215,Female,PhD,Widow,4,Professional,41,850.0,True,0
+35,29103,Female,PhD,Widow,1,Professional,33,850.0,True,1
+45,10672,Female,Bachelor,Married,3,Professional,2,300.0,False,0
+59,91124,Other,Bachelor,Widow,1,Unemployed,7,850.0,False,1
+39,27935,Female,Bachelor,Divorced,0,Student,30,776.2820512820513,True,1
+38,45574,Other,Bachelor,Widow,0,Professional,10,850.0,False,1
+23,44463,Other,Master,Widow,4,Unemployed,44,850.0,False,0
+18,56148,Other,Master,Widow,2,Student,6,850.0,True,1
+22,66314,Female,Master,Married,3,Student,44,850.0,True,1
+58,67209,Male,Master,Divorced,3,Professional,1,850.0,True,1
+29,38338,Male,High School,Single,2,Self-Employed,5,850.0,True,1
+43,46657,Female,Master,Single,0,Self-Employed,40,850.0,False,1
+63,55651,Male,Bachelor,Divorced,0,Self-Employed,31,850.0,True,1
+51,45026,Male,PhD,Divorced,1,Professional,19,850.0,False,1
+66,82146,Other,Master,Divorced,4,Self-Employed,33,850.0,True,0
+31,59819,Other,High School,Married,4,Unemployed,49,850.0,False,0
+43,64697,Female,Bachelor,Single,4,Unemployed,15,850.0,True,1
+62,63257,Female,PhD,Divorced,1,Unemployed,24,850.0,True,1
+44,73469,Male,PhD,Married,4,Unemployed,11,850.0,False,1
+26,53620,Other,Master,Single,2,Student,6,850.0,False,1
+43,24063,Female,PhD,Widow,1,Unemployed,38,631.2546511627907,False,0
+64,57993,Female,Master,Married,2,Self-Employed,16,850.0,True,1
+39,36972,Female,Master,Single,1,Professional,44,850.0,False,1
+64,39427,Female,Bachelor,Married,4,Self-Employed,10,618.646875,False,1
+47,61727,Female,Bachelor,Single,2,Unemployed,5,850.0,False,0
+60,74765,Female,High School,Single,2,Student,22,850.0,False,1
+65,50425,Male,Bachelor,Widow,2,Unemployed,26,819.0692307692307,False,0
+34,56176,Other,Bachelor,Married,1,Professional,45,850.0,False,0
+43,84044,Other,Master,Divorced,3,Self-Employed,5,850.0,False,1
+53,54815,Female,Bachelor,Widow,4,Professional,37,850.0,False,0
+18,102033,Other,Master,Widow,2,Professional,1,850.0,False,1
+25,61310,Other,Master,Single,3,Professional,21,850.0,True,1
+66,14784,Other,Bachelor,Divorced,4,Self-Employed,19,300.0,True,0
+52,65066,Female,High School,Married,4,Unemployed,24,850.0,False,1
+69,57623,Female,High School,Divorced,2,Professional,14,850.0,True,0
+32,75795,Other,PhD,Divorced,2,Self-Employed,48,850.0,True,1
+64,63463,Other,PhD,Divorced,1,Student,28,850.0,False,0
+39,47230,Female,Bachelor,Divorced,3,Self-Employed,7,850.0,False,1
+31,25514,Male,High School,Divorced,3,Student,36,850.0,False,0
+43,45819,Other,Master,Single,2,Self-Employed,48,850.0,False,1
+45,32989,Male,PhD,Single,4,Unemployed,32,779.6888888888889,False,1
+40,38389,Other,Master,Widow,2,Professional,21,850.0,False,0
+31,61771,Male,PhD,Single,4,Unemployed,49,850.0,True,0
+41,83398,Male,Bachelor,Widow,4,Self-Employed,46,850.0,False,1
+19,57893,Male,High School,Widow,2,Professional,4,850.0,True,0
+62,26082,Female,PhD,Married,0,Student,38,496.6774193548387,False,0
+43,58892,Male,High School,Divorced,3,Self-Employed,17,850.0,False,0
+31,73932,Male,Master,Single,4,Professional,37,850.0,True,1
+68,37804,Male,Bachelor,Married,4,Student,36,610.5411764705883,False,0
+24,47319,Other,High School,Single,0,Student,29,850.0,False,1
+20,50293,Male,Bachelor,Widow,1,Unemployed,30,850.0,True,0
+64,34302,Other,High School,Single,0,Self-Employed,9,553.96875,False,1
+40,62965,Male,Master,Divorced,0,Student,14,850.0,True,1
+63,47581,Male,Master,Widow,4,Professional,41,819.8539682539683,False,0
+60,58390,Female,Bachelor,Widow,3,Student,47,850.0,False,0
+64,32250,Other,Master,Married,0,Student,43,589.90625,True,1
+62,41250,Male,PhD,Divorced,1,Unemployed,17,694.9725806451613,False,0
+35,64447,Other,High School,Widow,2,Unemployed,22,850.0,True,0
+55,42543,Other,Master,Divorced,0,Professional,32,837.5090909090909,True,1

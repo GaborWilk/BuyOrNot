@@ -13,8 +13,9 @@ Where the output (purchased column) can be the following:
 It's designed for learning, experimentation, and potential real-world adaptation.
 
 ### Results
-![Confusion Matrix](https://github.com/GaborWilk/BuyOrNot/blob/main/data/confusion_matrix.png?raw=true)
-![Feature Importances](https://github.com/GaborWilk/BuyOrNot/blob/main/data/feature_importances.png?raw=true)
+
+GridSearchCV + RandomForest
+![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/result_gridcv_randomforest.png?raw=true)
 
 ## Features
 
