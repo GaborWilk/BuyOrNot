@@ -37,7 +37,7 @@ Final Model Accuracies:
 - Full data preprocessing (numeric + categorical) to filter missing values
 - Training multiple models (i.e. RandomForest, GradientBoosting, LogisticRegression and SVC) using pipelines
 - Tunning hyperparameters with GridSearchCV cross-validation
-- Evaluation with classification report, confusion matrix
+- Evaluation with confusion matrix 
 - Feature importance visualization
 - Saving and reloading the model
 - Making predictions on new data
