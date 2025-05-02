@@ -14,7 +14,9 @@ It's designed for learning, experimentation, and potential real-world adaptation
 
 ### Results
 
-GridSearchCV + RandomForest
+The generated purchase data contains almost equal amounts of yes and no (y bincount: [497 503]).
+
+**GridSearchCV + RandomForest**
 ![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/result_gridcv_randomforest.png?raw=true)
 
 ## Features
