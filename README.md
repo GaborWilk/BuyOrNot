@@ -14,20 +14,32 @@ It's designed for learning, experimentation, and potential real-world adaptation
 
 ### Results
 
-The generated purchase data contains almost equal amounts of yes and no (y bincount: [497 503]).
+The generated purchase data contains almost equal amounts of yes and no values.
+![Generated Data](https://github.com/GaborWilk/BuyOrNot/blob/main/data/purchase_prob_before_noise.png?raw=true)
 
-**GridSearchCV + RandomForest**
-![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/result_gridcv_randomforest.png?raw=true)
+Final Model Accuracies:
+- RandomForest: Accuracy = 0.7650
+- GradientBoosting: Accuracy = 0.7600
+- LogisticRegression: Accuracy = 0.8050
+- SVC: Accuracy = 0.7700
+
+**Best Model: LogisticRegression with Accuracy = 0.8050**
+
+**Confusion matrices**
+![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/results_confusion_matrices.png?raw=true)
+
+**Top features**
+![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/results_top_features.png?raw=true)
 
 ## Features
 
 - Realistic dataset generation (age, income, gender)
 - Full data preprocessing (numeric + categorical) to filter missing values
-- Training a RandomForestClassifier using a pipeline
+- Training multiple models (i.e. RandomForest, GradientBoosting, LogisticRegression and SVC) using pipelines
 - Tunning hyperparameters with GridSearchCV cross-validation
-- Evaluation with classification report + confusion matrix
+- Evaluation with classification report, confusion matrix
 - Feature importance visualization
-- Saving and reloads the model
+- Saving and reloading the model
 - Making predictions on new data
 
 ## Tech Stack

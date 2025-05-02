@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 def generate_data():
@@ -37,12 +38,22 @@ def generate_data():
     credit_scores = np.clip(credit_scores, 300, 850)
     interested_in_newsletters = np.random.choice([True, False], size=n_samples)
 
-    # Normalize age and income for smoother influence
-    age_score = 1 - (ages - 18) / (70 - 18)  # Higher scores for younger
+    # Age related bonus
+    age_score = np.zeros_like(ages, dtype=float)
+    age_score[(ages >= 18) & (ages <= 35)] = 0.27
+    age_score[(ages >= 36) & (ages <= 50)] = 0.15
+    age_score[ages >= 51] = -0.05
+
+    # Income related bonus
     income_score = (incomes - incomes.min()) / (incomes.max() - incomes.min())
 
+    # Gender-related bonus
+    gender_score = np.zeros_like(genders, dtype=float)
+    gender_score[genders == 'Female'] = 0.15
+    gender_score[genders == 'Male'] = 0.07
+
     # Education influence
-    education_map = {'High School': 0.05, 'Bachelor': 0.3, 'Master': 0.5, 'PhD': 0.6}
+    education_map = {'High School': 0.25, 'Bachelor': 0.3, 'Master': 0.5, 'PhD': 0.55}
     education_score = pd.Series(education_levels).map(education_map)
 
     # Job type influence
@@ -55,30 +66,51 @@ def generate_data():
     job_score = pd.Series(job_types).map(job_map)
 
     # Marital status and children influence
-    family_bonus = ((marital_statuses == 'Married').astype(int) * 0.32) - (children * 0.08)
+    family_score = ((marital_statuses == 'Married').astype(int) * 0.35) - (children * 0.07)
+    family_score += ((marital_statuses == 'Single').astype(int) * 0.22) - (children * 0.09)
 
     # Credit and previous purchase influence
     credit_score_norm = (credit_scores - 300) / (850 - 300)
-    purchase_history_score = (previous_purchases > 3).astype(int) * 0.09
+    purchase_history_score = (previous_purchases > 3).astype(int) * 0.085
 
     # Newsletter interest
     newsletter_score = interested_in_newsletters.astype(int) * 0.05
 
     # Combine all into a realistic probability
     purchase_prob = (
-            0.20 * income_score +
-            0.15 * age_score +
-            0.10 * education_score +
-            0.16 * job_score +
-            0.14 * family_bonus +
-            0.15 * credit_score_norm +
-            0.09 * purchase_history_score +
+            0.20 * age_score +
+            0.24 * income_score +
+            0.11 * gender_score +
+            0.16 * education_score +
+            0.17 * job_score +
+            0.18 * family_score +
+            0.13 * credit_score_norm +
+            0.11 * purchase_history_score +
             0.10 * newsletter_score
     )
 
     # Add noise and make binary
-    noise = np.random.normal(0, 0.225, size=n_samples)
-    purchased = (purchase_prob + noise > 0.4).astype(int)
+    purchase_prob = (purchase_prob - np.min(purchase_prob)) / (np.max(purchase_prob) - np.min(purchase_prob))
+    purchase_prob = purchase_prob ** 1.4  # Skews more toward 0 and 1
+
+
+    # Plot distribution of raw purchase probabilities
+    plt.figure(figsize=(8, 5))
+    plt.hist(purchase_prob, bins=30, edgecolor='k', alpha=0.7)
+    plt.title("Distribution of Purchase Probabilities (Before Noise)")
+    plt.xlabel("Purchase Probability")
+    plt.ylabel("Number of Samples")
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+
+
+    #noise = np.random.normal(0, 0.225, size=n_samples)
+    noise = np.random.normal(loc=0, scale=0.1, size=n_samples)
+    purchased = (purchase_prob + noise > 0.5).astype(int)
+
+    print(f"purchased bincount: {np.bincount(purchased)}")
 
     data = pd.DataFrame({
         'age': ages,
