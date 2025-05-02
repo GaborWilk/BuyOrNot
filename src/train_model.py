@@ -12,6 +12,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import classification_report, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 
+from generate_data import generate_data
+
 # Resolve the project root
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 
@@ -26,26 +28,9 @@ def save_with_check(path, save_func, description="file"):
 
 
 # Generate realistic dataset
-np.random.seed(42)
-num_samples = 500
+data = generate_data()
 
-ages = np.random.randint(18, 70, size=num_samples)
-incomes = np.random.normal(loc=60000, scale=15000, size=num_samples).astype(int)
-genders = np.random.choice(['Male', 'Female'], size=num_samples)
-
-# Simulate purchase behavior + randomness
-purchase_prob = ((ages > 30) & (ages < 60) & (incomes > 55000)).astype(int)
-noise = np.random.binomial(1, 0.2, size=num_samples)
-purchased = np.clip(purchase_prob + noise, 0, 1)
-
-data = pd.DataFrame({
-    'age': ages,
-    'income': incomes,
-    'gender': genders,
-    'purchased': purchased
-})
-
-# Save dataset to CSV (optional)
+# Save dataset to CSV
 csv_path = PROJECT_ROOT / "data" / "realistic_purchases.csv"
 save_with_check(
     path=csv_path,
