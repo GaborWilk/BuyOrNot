@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+# Debug only
+# import matplotlib.pyplot as plt
 
 
 def generate_data():
@@ -93,7 +94,8 @@ def generate_data():
     purchase_prob = (purchase_prob - np.min(purchase_prob)) / (np.max(purchase_prob) - np.min(purchase_prob))
     purchase_prob = purchase_prob ** 1.4  # Skews more toward 0 and 1
 
-
+    """
+    # Debug only
     # Plot distribution of raw purchase probabilities
     plt.figure(figsize=(8, 5))
     plt.hist(purchase_prob, bins=30, edgecolor='k', alpha=0.7)
@@ -103,14 +105,13 @@ def generate_data():
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+    """
 
-
-
-    #noise = np.random.normal(0, 0.225, size=n_samples)
     noise = np.random.normal(loc=0, scale=0.1, size=n_samples)
     purchased = (purchase_prob + noise > 0.5).astype(int)
 
-    print(f"purchased bincount: {np.bincount(purchased)}")
+    # Debug only
+    # print(f"purchased bincount: {np.bincount(purchased)}")
 
     data = pd.DataFrame({
         'age': ages,

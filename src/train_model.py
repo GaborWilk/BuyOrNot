@@ -1,7 +1,7 @@
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import pathlib
+import joblib
 
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import accuracy_score, confusion_matrix, ConfusionMatrixDisplay
 
 from generate_data import generate_data
 
@@ -72,168 +72,117 @@ models = {
     'SVC': SVC(probability=True, random_state=42)
 }
 
+# Define model specific param grids
+param_grids = {
+    'RandomForest': {
+        'classifier__n_estimators': [100, 200],
+        'classifier__max_depth': [5, 10, None],
+        'classifier__min_samples_split': [2, 5],
+        'classifier__min_samples_leaf': [1, 2],
+        'classifier__max_features': ['sqrt', 'log2']
+    },
+    'GradientBoosting': {
+        'classifier__n_estimators': [100, 200],
+        'classifier__learning_rate': [0.01, 0.1],
+        'classifier__max_depth': [3, 5]
+    },
+    'LogisticRegression': {
+        'classifier__C': [0.01, 0.1, 1, 10],
+        'classifier__solver': ['liblinear', 'lbfgs'],
+        'classifier__penalty': ['l2']
+    },
+    'SVC': {
+        'classifier__C': [0.1, 1, 10],
+        'classifier__kernel': ['linear', 'rbf'],
+        'classifier__gamma': ['scale', 'auto']
+    }
+}
+
 results = {}
 conf_matrices = {}
 feature_importances = {}
 
 # Train and evaluate
 for name, model in models.items():
+    print(f"Tuning and training: {name}")
     pipe = Pipeline([
         ('preprocessor', preprocessor),
         ('classifier', model)
     ])
-    pipe.fit(X_train, y_train)
-    y_pred = pipe.predict(X_test)
 
+    grid = GridSearchCV(
+        pipe,
+        param_grid=param_grids[name],
+        cv=5,
+        scoring='accuracy',
+        n_jobs=-1
+    )
+
+    grid.fit(X_train, y_train)
+    best_model_pipeline = grid.best_estimator_
+    y_pred = best_model_pipeline.predict(X_test)
     acc = accuracy_score(y_test, y_pred)
-    results[name] = {'accuracy': acc, 'y_pred': y_pred, 'model': pipe}
+
+    results[name] = {
+        'accuracy': acc,
+        'y_pred': y_pred,
+        'model': best_model_pipeline,
+        'best_params': grid.best_params_
+    }
 
     # Confusion Matrix
-    conf_matrices[name] = confusion_matrix(y_test, y_pred, labels=pipe.classes_)
+    clf = best_model_pipeline.named_steps['classifier']
+    conf_matrices[name] = confusion_matrix(y_test, y_pred, labels=clf.classes_)
 
     # Feature importance if supported
-    if hasattr(model, 'feature_importances_'):
-        ohe = pipe.named_steps['preprocessor'].named_transformers_['cat'].named_steps['encoder']
+    if hasattr(clf, 'feature_importances_'):
+        fitted_preprocessor = best_model_pipeline.named_steps['preprocessor']
+        ohe = fitted_preprocessor.named_transformers_['cat'].named_steps['encoder']
         cat_names = ohe.get_feature_names_out(categorical_features)
         all_features = numeric_features + list(cat_names)
         feature_importances[name] = pd.Series(
-            model.feature_importances_, index=all_features
+            clf.feature_importances_, index=all_features
         ).sort_values(ascending=False)
 
 # Plot confusion matrices
 fig_cm, axes_cm = plt.subplots(2, 2, figsize=(12, 10))
 axes_cm = axes_cm.flatten()
 for i, (name, cm) in enumerate(conf_matrices.items()):
-    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=models[name].classes_)
+    clf = results[name]['model'].named_steps['classifier']
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=clf.classes_)
     disp.plot(ax=axes_cm[i], cmap='Blues', colorbar=False)
     axes_cm[i].set_title(f"{name} Confusion Matrix")
 plt.tight_layout()
 plt.show()
 
-# Plot feature importances
-fig_fi, axes_fi = plt.subplots(1, len(feature_importances), figsize=(15, 6))
-if len(feature_importances) == 1:
-    axes_fi = [axes_fi]
+# Plot feature importances only if there are any
+if feature_importances:
+    fig_fi, axes_fi = plt.subplots(1, len(feature_importances), figsize=(15, 6))
+    if len(feature_importances) == 1:
+        axes_fi = [axes_fi]
 
-for ax, (name, importances) in zip(axes_fi, feature_importances.items()):
-    importances.head(10).plot(kind='barh', ax=ax, color='teal')
-    ax.set_title(f"{name} Top Features")
-    ax.invert_yaxis()
-plt.tight_layout()
-plt.show()
+    for ax, (name, importances) in zip(axes_fi, feature_importances.items()):
+        importances.head(10).plot(kind='barh', ax=ax, color='teal')
+        ax.set_title(f"{name} Top Features")
+        ax.invert_yaxis()
 
-# --- 7. Final accuracy report ---
+    plt.tight_layout()
+    plt.show()
+
+# Final accuracy report
 print("\nFinal Model Accuracies:")
 best_model = max(results.items(), key=lambda x: x[1]['accuracy'])
 for name, res in results.items():
     print(f"{name}: Accuracy = {res['accuracy']:.4f}")
 
-print(f"\nBest Model: {best_model[0]} with Accuracy = {best_model[1]['accuracy']:.4f}")
+print(f"\nBest Model: {best_model[0]} with Accuracy = {best_model[1]['accuracy']:.4f}\n")
 
-
-"""
-# Pipeline
-pipeline = Pipeline([
-    ('preprocessor', preprocessor),
-    ('classifier', RandomForestClassifier(random_state=42))
-])
-
-# Hyperparameter tuning for GridSearchCV
-param_grid = {
-    'classifier__n_estimators': [100, 200],
-    'classifier__max_depth': [5, 10, 15, None],
-    'classifier__min_samples_split': [2, 5, 10],
-    'classifier__min_samples_leaf': [1, 2, 4],
-    'classifier__max_features': ['sqrt', 'log2']
-}
-
-grid_search = GridSearchCV(
-    pipeline,
-    param_grid,
-    cv=5,
-    scoring='accuracy',
-    n_jobs=-1,
+# Save best model
+best_model_name, best_model_data = best_model
+best_model_pipeline = best_model_data['model']
+model_path = PROJECT_ROOT / "model" / "best_model.pkl"
+save_with_check(
+    path=model_path,
+    save_func=lambda p: joblib.dump(best_model_pipeline, p),
+    description=f"{best_model_name} model"
 )
-grid_search.fit(X_train, y_train)
-
-# Hyperparameter tuning for RandomizedSearchCV
-param_rand = {
-    'classifier__n_estimators': [np.random.randint(50, 300)],
-    'classifier__max_depth': [5, 10, 15, None],
-    'classifier__min_samples_split': [np.random.randint(2, 11)],
-    'classifier__min_samples_leaf': [np.random.randint(1, 5)],
-    'classifier__max_features': ['sqrt', 'log2']
-}
-
-random_search = RandomizedSearchCV(
-    pipeline,
-    param_rand,
-    cv=5,
-    scoring='accuracy',
-    n_jobs=-1
-)
-random_search.fit(X_train, y_train)
-
-# Evaluate
-print("\nBest Parameters for GridSearchCV:", grid_search.best_params_)
-y_pred_gscv = grid_search.predict(X_test)
-print("\nClassification Report:\n", classification_report(y_test, y_pred_gscv, zero_division=0))
-print("Accuracy:", accuracy_score(y_test, y_pred_gscv))
-
-print("\nBest Parameters for RandomizedSearchCV:", random_search.best_params_)
-y_pred_rscv = random_search.predict(X_test)
-print("\nClassification Report:\n", classification_report(y_test, y_pred_rscv, zero_division=0))
-print("Accuracy:", accuracy_score(y_test, y_pred_rscv))
-
-# Set up subplots
-fig, axes = plt.subplots(2, 2, figsize=(14, 6))
-
-# Subplot 1: Confusion Matrix GridSearchCV
-cm = confusion_matrix(y_test, y_pred_gscv, labels=grid_search.classes_)
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=grid_search.classes_)
-disp.plot(cmap='Blues', ax=axes[0], colorbar=False)
-axes[0].set_title("Confusion Matrix GSCV")
-
-# Subplot 2: Feature Importance GridSearchCV
-rf = grid_search.best_estimator_.named_steps['classifier']
-preprocessor = grid_search.best_estimator_.named_steps['preprocessor']
-ohe = preprocessor.named_transformers_['cat'].named_steps['encoder']
-cat_features = ohe.get_feature_names_out(categorical_features)
-all_features = numeric_features + list(cat_features)
-
-importance_df = pd.DataFrame({
-    'Feature': all_features,
-    'Importance': rf.feature_importances_
-}).sort_values(by='Importance', ascending=False)
-
-axes[1].barh(importance_df['Feature'], importance_df['Importance'], color='skyblue')
-axes[1].set_title("Feature Importances GSCV")
-axes[1].set_xlabel("Importance")
-axes[1].invert_yaxis()
-
-# Subplot 3: Confusion Matrix RandomizedSearchCV
-cm = confusion_matrix(y_test, y_pred_rscv, labels=random_search.classes_)
-disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=random_search.classes_)
-disp.plot(cmap='Blues', ax=axes[1], colorbar=False)
-axes[1].set_title("Confusion Matrix RSCV")
-
-# Subplot 4: Feature Importance RandomizedSearchCV
-rf = random_search.best_estimator_.named_steps['classifier']
-preprocessor = random_search.best_estimator_.named_steps['preprocessor']
-ohe = preprocessor.named_transformers_['cat'].named_steps['encoder']
-cat_features = ohe.get_feature_names_out(categorical_features)
-all_features = numeric_features + list(cat_features)
-
-importance_df = pd.DataFrame({
-    'Feature': all_features,
-    'Importance': rf.feature_importances_
-}).sort_values(by='Importance', ascending=False)
-
-axes[2].barh(importance_df['Feature'], importance_df['Importance'], color='skyblue')
-axes[2].set_title("Feature Importances RSCV")
-axes[2].set_xlabel("Importance")
-axes[2].invert_yaxis()
-
-plt.tight_layout()
-plt.show()
-"""

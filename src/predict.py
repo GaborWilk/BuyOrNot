@@ -6,7 +6,7 @@ import pathlib
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 # Load the saved model
-model_path = PROJECT_ROOT / "model" / "best_pipeline.pkl"
+model_path = PROJECT_ROOT / "model" / "best_model.pkl"
 model = joblib.load(model_path)
 
 # Example new data

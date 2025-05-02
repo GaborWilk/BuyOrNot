@@ -19,11 +19,11 @@ The generated purchase data contains almost equal amounts of yes and no values.
 
 Final Model Accuracies:
 - RandomForest: Accuracy = 0.7650
-- GradientBoosting: Accuracy = 0.7600
+- GradientBoosting: Accuracy = 0.7550
 - LogisticRegression: Accuracy = 0.8050
-- SVC: Accuracy = 0.7700
+- SVC: Accuracy = 0.8150
 
-**Best Model: LogisticRegression with Accuracy = 0.8050**
+**Best Model: SVC with Accuracy = 0.8150**
 
 **Confusion matrices**
 ![Results](https://github.com/GaborWilk/BuyOrNot/blob/main/data/results_confusion_matrices.png?raw=true)
