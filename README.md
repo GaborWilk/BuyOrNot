@@ -60,14 +60,25 @@ python src/predict.py
 ### Example Prediction
 
 ```python
-new_data = pd.DataFrame({
+new_person = pd.DataFrame({
     'age': [35],
-    'income': [75000],
-    'gender': ['Female']
+    'income': [70000],
+    'gender': ['Female'],
+    'education_level': ['PhD'],
+    'marital_status': ['Single'],
+    'children': [1],
+    'job_type': ['Professional'],
+    'previous_purchase': [0],
+    'credit_score': [850],
+    'interested_in_newsletter': [False]
 })
 
-prediction = model.predict(new_data)
-# Output: [1]  => Will Purchase
+prediction = model.predict(new_person)
+
+# Prediction Result
+# ========================
+# Will the person purchase? → Yes
+# ========================
 ```
 
 ## License

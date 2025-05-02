@@ -10,12 +10,22 @@ model_path = PROJECT_ROOT / "model" / "best_pipeline.pkl"
 model = joblib.load(model_path)
 
 # Example new data
-new_customer = pd.DataFrame({
+new_person = pd.DataFrame({
     'age': [35],
-    'income': [75000],
-    'gender': ['Female']
+    'income': [70000],
+    'gender': ['Female'],
+    'education_level': ['PhD'],
+    'marital_status': ['Single'],
+    'children': [1],
+    'job_type': ['Professional'],
+    'previous_purchase': [0],
+    'credit_score': [850],
+    'interested_in_newsletter': [False]
 })
 
 # Predict
-prediction = model.predict(new_customer)
-print("Prediction:", prediction[0])
+prediction = model.predict(new_person)
+print("\nPrediction Result")
+print("========================")
+print(f"Will the person purchase? → {'Yes' if prediction[0] == 1 else 'No'}")
+print("========================\n")
