@@ -4,7 +4,7 @@
 
 **BuyOrNot** is a machine learning project that predicts whether a customer will make a purchase (it's generic, it could be a product, house, etc.) based on their demographics, using scikit-learn pipelines, preprocessing, and hyperparameter tuning. It is a binary classification problem, and basically the project gives an
 answer to this question:
-    Based on age, income, and gender, will this person make a purchase?
+    Based on age, income, gender, education level, marital status, children, job type, credit score, previous purchases and interest in newsletters, will this person make a purchase?
 
 Where the output (purchased column) can be the following:
 - 1 = the person purchased (something)
