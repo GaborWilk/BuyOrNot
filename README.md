@@ -36,7 +36,7 @@ Final Model Accuracies:
 - Realistic dataset generation (age, income, gender)
 - Full data preprocessing (numeric + categorical) to filter missing values
 - Training multiple models (i.e. RandomForest, GradientBoosting, LogisticRegression and SVC) using pipelines
-- Tunning hyperparameters with GridSearchCV cross-validation
+- Tuning hyperparameters with GridSearchCV cross-validation
 - Evaluation with confusion matrix 
 - Feature importance visualization
 - Saving and reloading the model
